@@ -1,0 +1,193 @@
+{% extends "base.html" %}
+{% block title %}Estatísticas — Pelada de Domingo{% endblock %}
+
+{% block content %}
+<section class="stats-page">
+    <h2>Estatísticas Agregadas</h2>
+
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-period="mensal">Mensal</button>
+        <button class="filter-btn" data-period="anual">Anual</button>
+        <button class="filter-btn" data-period="total">Total</button>
+    </div>
+
+    {% for period in ["mensal", "anual", "total"] %}
+    <div class="stats-period" id="period-{{ period }}" {% if period != "mensal" %}style="display:none"{% endif %}>
+
+        {% set agg = aggregate[period] %}
+
+        {# Maior vencedor #}
+        <details class="ranking" open>
+            <summary><h3>Maior Vencedor</h3></summary>
+            {% if agg.maior_vencedor.players or agg.maior_vencedor.goalkeepers %}
+                {% if agg.maior_vencedor.players %}
+                <h4 class="role-subtitle">Jogadores de Linha</h4>
+                <table>
+                    <thead><tr><th>#</th><th>Jogador</th><th>Vitórias</th></tr></thead>
+                    <tbody>
+                        {% for r in agg.maior_vencedor.players %}
+                        <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.wins }}</td></tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                {% endif %}
+                {% if agg.maior_vencedor.goalkeepers %}
+                <h4 class="role-subtitle">Goleiros</h4>
+                <table>
+                    <thead><tr><th>#</th><th>Goleiro</th><th>Vitórias</th></tr></thead>
+                    <tbody>
+                        {% for r in agg.maior_vencedor.goalkeepers %}
+                        <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.wins }}</td></tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                {% endif %}
+            {% else %}
+            <p class="no-data">Sem dados para este período.</p>
+            {% endif %}
+        </details>
+
+        {# Rei da mesa #}
+        <details class="ranking" open>
+            <summary><h3>Rei da Mesa</h3></summary>
+            {% if agg.rei_da_mesa.players or agg.rei_da_mesa.goalkeepers %}
+                {% if agg.rei_da_mesa.players %}
+                <h4 class="role-subtitle">Jogadores de Linha</h4>
+                <table>
+                    <thead><tr><th>#</th><th>Jogador</th><th>Vitórias</th><th>Empates</th><th>Total</th></tr></thead>
+                    <tbody>
+                        {% for r in agg.rei_da_mesa.players %}
+                        <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.vitorias }}</td><td>{{ r.empates }}</td><td>{{ r.total }}</td></tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                {% endif %}
+                {% if agg.rei_da_mesa.goalkeepers %}
+                <h4 class="role-subtitle">Goleiros</h4>
+                <table>
+                    <thead><tr><th>#</th><th>Goleiro</th><th>Vitórias</th><th>Empates</th><th>Total</th></tr></thead>
+                    <tbody>
+                        {% for r in agg.rei_da_mesa.goalkeepers %}
+                        <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.vitorias }}</td><td>{{ r.empates }}</td><td>{{ r.total }}</td></tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                {% endif %}
+            {% else %}
+            <p class="no-data">Sem dados para este período.</p>
+            {% endif %}
+        </details>
+
+        {# Goleador #}
+        <details class="ranking" open>
+            <summary><h3>Goleador</h3></summary>
+            {% if agg.goleador.players or agg.goleador.goalkeepers %}
+                {% if agg.goleador.players %}
+                <h4 class="role-subtitle">Jogadores de Linha</h4>
+                <table>
+                    <thead><tr><th>#</th><th>Jogador</th><th>Gols</th></tr></thead>
+                    <tbody>
+                        {% for r in agg.goleador.players %}
+                        <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.goals }}</td></tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                {% endif %}
+                {% if agg.goleador.goalkeepers %}
+                <h4 class="role-subtitle">Goleiros</h4>
+                <table>
+                    <thead><tr><th>#</th><th>Goleiro</th><th>Gols</th></tr></thead>
+                    <tbody>
+                        {% for r in agg.goleador.goalkeepers %}
+                        <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.goals }}</td></tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                {% endif %}
+            {% else %}
+            <p class="no-data">Sem dados para este período.</p>
+            {% endif %}
+        </details>
+
+        {# Pega tudo #}
+        <details class="ranking" open>
+            <summary><h3>Pega Tudo</h3></summary>
+            {% if agg.pega_tudo %}
+            <table>
+                <thead><tr><th>#</th><th>Goleiro</th><th>Gols Tomados</th><th>Jogos</th></tr></thead>
+                <tbody>
+                    {% for r in agg.pega_tudo %}
+                    <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.goals_conceded }}</td><td>{{ r.games_played }}</td></tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% else %}
+            <p class="no-data">Sem dados para este período.</p>
+            {% endif %}
+        </details>
+
+        {# Fominha #}
+        <details class="ranking" open>
+            <summary><h3>Fominha</h3></summary>
+            {% if agg.fominha.players or agg.fominha.goalkeepers %}
+                {% if agg.fominha.players %}
+                <h4 class="role-subtitle">Jogadores de Linha</h4>
+                <table>
+                    <thead><tr><th>#</th><th>Jogador</th><th>Jogos</th></tr></thead>
+                    <tbody>
+                        {% for r in agg.fominha.players %}
+                        <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.games }}</td></tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                {% endif %}
+                {% if agg.fominha.goalkeepers %}
+                <h4 class="role-subtitle">Goleiros</h4>
+                <table>
+                    <thead><tr><th>#</th><th>Goleiro</th><th>Jogos</th></tr></thead>
+                    <tbody>
+                        {% for r in agg.fominha.goalkeepers %}
+                        <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.games }}</td></tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                {% endif %}
+            {% else %}
+            <p class="no-data">Sem dados para este período.</p>
+            {% endif %}
+        </details>
+
+        {# Apitador #}
+        <details class="ranking" open>
+            <summary><h3>Apitador</h3></summary>
+            {% if agg.apitador %}
+            <table>
+                <thead><tr><th>#</th><th>Juíz</th><th>Peladas</th></tr></thead>
+                <tbody>
+                    {% for r in agg.apitador %}
+                    <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.peladas }}</td></tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% else %}
+            <p class="no-data">Sem dados para este período.</p>
+            {% endif %}
+        </details>
+
+    </div>
+    {% endfor %}
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        document.querySelectorAll('.stats-period').forEach(d => d.style.display = 'none');
+        document.getElementById('period-' + btn.dataset.period).style.display = '';
+    });
+});
+</script>
+{% endblock %}

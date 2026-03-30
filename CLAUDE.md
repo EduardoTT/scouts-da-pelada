@@ -22,6 +22,7 @@ Depois da pelada vamos cadastrar os novos dados para poder atualizar o site.
     {
       "game_number": 1,
       "score": { "blue": 2, "red": 1 },
+      "team_out": "red",
       "blue_team": [
         { "name": "João", "role": "goalkeeper" },
         { "name": "Pedro", "role": "player" },
@@ -52,7 +53,7 @@ Depois da pelada vamos cadastrar os novos dados para poder atualizar o site.
 - Em média 8 jogos por pelada
 - Gols agrupados por jogador com campo `count`
 - Gol contra: adicionar `"own_goal": true` — aparece no detalhamento mas não conta na artilharia
-- Não há campo `entering_team` — é derivado do resultado do jogo anterior
+- Campo `team_out` em cada jogo: `"blue"`, `"red"` ou `"both"` (indica qual time saiu após o jogo)
 
 ## Regras da pelada
 
@@ -60,15 +61,23 @@ Depois da pelada vamos cadastrar os novos dados para poder atualizar o site.
 - Dois times jogam, os demais jogadores ficam de fora (suplentes)
 - O time que perde sai, e entra o próximo time (suplentes)
 - O time que vence permanece em campo para o jogo seguinte
-- Em caso de empate, fica o time que acabou de entrar (o time que já estava sai)
+- Em caso de empate com poucos suplentes: fica o time que acabou de entrar (o time que já estava sai)
+- Em caso de empate com muitos suplentes (>10): ambos os times saem
+- Em caso de empate no jogo 1: vai para pênaltis (o perdedor dos pênaltis sai)
+- O campo `team_out` registra explicitamente qual time saiu: `"blue"`, `"red"` ou `"both"`
 
 ### "Ficou na mesa"
+- Vencer o jogo 1 conta como "ficou na mesa" (vitória) — o time ficou para o jogo 2
+- Empate no jogo 1 não conta (nenhum time ficou por mérito, vai para pênaltis)
 - A partir do jogo 2, o time que permanece em campo ganha "ficou na mesa"
-- Vitória do time que já estava em campo = contabiliza como "vitória"
+- A lógica usa `team_out` do jogo anterior para determinar qual time ficou e qual entrou
+  - Se `team_out` do jogo anterior = `"red"` → azul ficou (incumbent), vermelho é novo (entering) no jogo atual... depende das composições do próximo jogo
+  - Se `team_out` do jogo anterior = `"both"` → ambos são novos no próximo jogo, ninguém é incumbent
+- Vitória do time que já estava em campo (incumbent) = contabiliza como "vitória"
 - Empate quando o time acabou de entrar = contabiliza como "empate ao entrar"
-- Baseado no resultado do jogo, não no tracking individual de jogadores
+- Se `team_out` anterior foi `"both"`: ninguém ganha crédito de "ficou na mesa" no jogo seguinte (ambos são novos)
 - Um jogador pode permanecer em campo mesmo estando no time perdedor (para completar o time seguinte por falta de suplentes). Nesse caso, ele entra no time novo e NÃO conta como "ficou na mesa"
-- Para derivar qual time entrou: verificar o resultado do jogo anterior. O time vencedor permaneceu; o outro time é o que entrou. No jogo 1, nenhum time "ficou na mesa"
+- No jogo 1, nenhum time "ficou na mesa" (ambos são novos)
 
 ### Gol contra
 - Conta no placar do time adversário

@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% block title %}Pelada de Domingo{% endblock %}
+
+{% block content %}
+{% if latest %}
+<section class="highlight">
+    <h2>Última Pelada — {{ latest.date }}</h2>
+    <p class="referee">Juíz: {{ latest.referee }}</p>
+
+    <div class="highlight-grid">
+        {% if latest_stats.top_scorers.players %}
+        <div class="highlight-card">
+            <h3>Artilheiro</h3>
+            {% set top_goals = latest_stats.top_scorers.players[0].goals %}
+            {% set tied = latest_stats.top_scorers.players | selectattr("goals", "equalto", top_goals) | list %}
+            <span class="highlight-name">{{ tied | map(attribute="name") | join(", ") }}</span>
+            <span class="highlight-value">{{ top_goals }} gol{{ 's' if top_goals != 1 }}</span>
+        </div>
+        {% endif %}
+
+        {% if latest_stats.victory_ranking.players %}
+        <div class="highlight-card">
+            <h3>Maior Vencedor</h3>
+            {% set top_wins = latest_stats.victory_ranking.players[0].wins %}
+            {% set tied = latest_stats.victory_ranking.players | selectattr("wins", "equalto", top_wins) | list %}
+            <span class="highlight-name">{{ tied | map(attribute="name") | join(", ") }}</span>
+            <span class="highlight-value">{{ top_wins }} vitória{{ 's' if top_wins != 1 }}</span>
+        </div>
+        {% endif %}
+
+        {% if latest_stats.best_goalkeeper %}
+        <div class="highlight-card">
+            <h3>Pega Tudo</h3>
+            {% set top_gk = latest_stats.best_goalkeeper[0].goals_conceded %}
+            {% set tied = latest_stats.best_goalkeeper | selectattr("goals_conceded", "equalto", top_gk) | list %}
+            <span class="highlight-name">{{ tied | map(attribute="name") | join(", ") }}</span>
+            <span class="highlight-value">{{ top_gk }} gol{{ 's' if top_gk != 1 }} tomado{{ 's' if top_gk != 1 }}</span>
+        </div>
+        {% endif %}
+
+        {% if latest_stats.ficou_na_mesa.players %}
+        <div class="highlight-card">
+            <h3>Rei da Mesa</h3>
+            {% set top_mesa = latest_stats.ficou_na_mesa.players[0].total %}
+            {% set tied = latest_stats.ficou_na_mesa.players | selectattr("total", "equalto", top_mesa) | list %}
+            <span class="highlight-name">{{ tied | map(attribute="name") | join(", ") }}</span>
+            <span class="highlight-value">{{ top_mesa }}x ficou na mesa</span>
+        </div>
+        {% endif %}
+    </div>
+</section>
+{% endif %}
+
+<section class="pelada-list">
+    <h2>Todas as Peladas</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Jogos</th>
+                <th>Artilheiro</th>
+                <th>Maior Vencedor</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in peladas_with_stats %}
+            <tr>
+                <td><a href="{{ base_url }}/pelada/{{ item.pelada.date }}.html">{{ item.pelada.date }}</a></td>
+                <td>{{ item.pelada.games | length }}</td>
+                <td>
+                    {% if item.stats.top_scorers.players %}
+                    {% set top = item.stats.top_scorers.players[0].goals %}
+                    {{ item.stats.top_scorers.players | selectattr("goals", "equalto", top) | map(attribute="name") | join(", ") }}
+                    ({{ top }})
+                    {% endif %}
+                </td>
+                <td>
+                    {% if item.stats.victory_ranking.players %}
+                    {% set top = item.stats.victory_ranking.players[0].wins %}
+                    {{ item.stats.victory_ranking.players | selectattr("wins", "equalto", top) | map(attribute="name") | join(", ") }}
+                    ({{ top }})
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</section>
+{% endblock %}

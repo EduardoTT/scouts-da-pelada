@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Pelada de Domingo{% endblock %}</title>
+    <link rel="stylesheet" href="{{ base_url }}/static/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-pattern-blue"></div>
+        <h1><a href="{{ base_url }}/">Pelada de Domingo</a></h1>
+        <nav>
+            <a href="{{ base_url }}/" class="{% if active_tab == 'peladas' %}active{% endif %}">Peladas</a>
+            <a href="{{ base_url }}/stats.html" class="{% if active_tab == 'stats' %}active{% endif %}">Estatísticas</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>Pelada de Domingo &copy; 2026</p>
+    </footer>
+    <div class="header-pattern-red"></div>
+    {% block scripts %}{% endblock %}
+</body>
+</html>

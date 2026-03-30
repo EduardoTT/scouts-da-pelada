@@ -1,0 +1,485 @@
+/* === Reset & Base === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #1a1a1a;
+    background: #f5f5f5;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* === Header === */
+header {
+    background: #fff;
+    border-bottom: 1px solid #1a1a1a;
+    position: relative;
+}
+
+.header-pattern-blue {
+    height: 64px;
+    background:
+        repeating-conic-gradient(#1d4ed8 0% 25%, #fff 0% 50%) 0 0 / 64px 64px;
+    background-position: left, right;
+}
+
+.header-pattern-red {
+    height: 64px;
+    background:
+        repeating-conic-gradient(#dc2626 0% 25%, #fff 0% 50%) 0 0 / 64px 64px;
+    background-position: left, right;
+}
+
+header h1 {
+    padding: 1rem 2rem 0.5rem;
+    font-size: 1.8rem;
+}
+
+header h1 a {
+    color: #1a1a1a;
+}
+
+nav {
+    display: flex;
+    gap: 0;
+    padding: 0 2rem;
+}
+
+nav a {
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.2s;
+}
+
+nav a:hover {
+    border-bottom-color: #999;
+}
+
+nav a.active {
+    border-bottom-color: #1d4ed8;
+    color: #1d4ed8;
+}
+
+/* === Main === */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* === Highlight Section === */
+.highlight {
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.highlight h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.25rem;
+}
+
+.referee {
+    color: #666;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+}
+
+.highlight-card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    border: 2px solid #eee;
+}
+
+.highlight-card h3 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #888;
+    margin-bottom: 0.5rem;
+}
+
+.highlight-name {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.highlight-value {
+    display: block;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* === Tables === */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5rem;
+}
+
+thead th {
+    text-align: left;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 2px solid #ddd;
+    font-size: 0.85rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+tbody td {
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid #eee;
+}
+
+tbody tr:hover {
+    background: #f9f9f9;
+}
+
+/* === Pelada List === */
+.pelada-list {
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.pelada-list h2 {
+    margin-bottom: 1rem;
+}
+
+.pelada-list a {
+    color: #1d4ed8;
+    font-weight: 600;
+}
+
+.pelada-list a:hover {
+    text-decoration: underline;
+}
+
+/* === Pelada Detail === */
+.pelada-header {
+    margin-bottom: 2rem;
+}
+
+.pelada-header h2 {
+    font-size: 1.6rem;
+}
+
+/* === Rankings === */
+.ranking {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+details.ranking > summary,
+details.game-details > summary {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+details.ranking > summary::after,
+details.game-details > summary::after {
+    content: "\25B2";
+    font-size: 0.7rem;
+    color: #999;
+    transition: transform 0.2s;
+}
+
+details.ranking:not([open]) > summary::after,
+details.game-details:not([open]) > summary::after {
+    transform: rotate(180deg);
+}
+
+details.ranking > summary::-webkit-details-marker,
+details.game-details > summary::-webkit-details-marker,
+details.game-card > summary::-webkit-details-marker {
+    display: none;
+}
+
+.ranking h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+details.ranking[open] > summary {
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #eee;
+}
+
+.role-subtitle {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #888;
+    margin: 1rem 0 0.25rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid #eee;
+}
+
+.role-subtitle:first-of-type {
+    margin-top: 0;
+}
+
+.game-details > h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+summary.game-header {
+    cursor: pointer;
+    list-style: none;
+}
+
+summary.game-header::after {
+    content: "\25B2";
+    font-size: 0.6rem;
+    color: rgba(255, 255, 255, 0.5);
+    transition: transform 0.2s;
+}
+
+details.game-card:not([open]) > summary.game-header::after {
+    transform: rotate(180deg);
+}
+
+/* === Game Details === */
+.game-card {
+    background: #fff;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background: #1a1a1a;
+    color: #fff;
+}
+
+.game-number {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.game-score {
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.team-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.team-label.blue {
+    background: #1d4ed8;
+    color: #fff;
+}
+
+.team-label.red {
+    background: #dc2626;
+    color: #fff;
+}
+
+.game-teams {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+}
+
+.team {
+    padding: 1rem 1.5rem;
+}
+
+.team h4 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
+.blue-team {
+    border-right: 1px solid #eee;
+}
+
+.blue-team h4 {
+    color: #1d4ed8;
+}
+
+.red-team h4 {
+    color: #dc2626;
+}
+
+.team ul {
+    list-style: none;
+}
+
+.team li {
+    padding: 0.2rem 0;
+    font-size: 0.95rem;
+}
+
+.gk-badge {
+    font-size: 0.7rem;
+    background: #f59e0b;
+    color: #fff;
+    padding: 0.1rem 0.35rem;
+    border-radius: 3px;
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+.game-goals {
+    padding: 1rem 1.5rem;
+    border-top: 1px solid #eee;
+}
+
+.game-goals h4 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.game-goals ul {
+    list-style: none;
+}
+
+.game-goals li {
+    padding: 0.2rem 0;
+    font-size: 0.95rem;
+}
+
+.own-goal {
+    font-size: 0.75rem;
+    background: #f87171;
+    color: #fff;
+    padding: 0.1rem 0.4rem;
+    border-radius: 3px;
+    margin-left: 0.3rem;
+}
+
+/* === Stats Page === */
+.stats-page h2 {
+    margin-bottom: 1rem;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.filter-btn {
+    padding: 0.5rem 1.5rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.filter-btn:hover {
+    border-color: #999;
+}
+
+.filter-btn.active {
+    background: #1d4ed8;
+    color: #fff;
+    border-color: #1d4ed8;
+}
+
+.no-data {
+    color: #999;
+    font-style: italic;
+    padding: 1rem 0;
+}
+
+/* === Footer === */
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: #999;
+    font-size: 0.85rem;
+}
+
+/* === Responsive === */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.3rem;
+        padding: 0.75rem 1rem 0.25rem;
+    }
+
+    nav {
+        padding: 0 1rem;
+    }
+
+    nav a {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    main {
+        margin: 1rem auto;
+    }
+
+    .highlight, .pelada-list, .ranking {
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    .highlight-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .game-teams {
+        grid-template-columns: 1fr;
+    }
+
+    .blue-team {
+        border-right: none;
+        border-bottom: 1px solid #eee;
+    }
+}

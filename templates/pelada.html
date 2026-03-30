@@ -1,0 +1,207 @@
+{% extends "base.html" %}
+{% block title %}Pelada {{ pelada.date }}{% endblock %}
+
+{% block content %}
+<section class="pelada-header">
+    <h2>Pelada — {{ pelada.date }}</h2>
+    <p class="referee">Juíz: {{ pelada.referee }}</p>
+</section>
+
+{# Victory ranking #}
+{% if stats.victory_ranking.players or stats.victory_ranking.goalkeepers %}
+<details class="ranking" open>
+    <summary><h3>Ranking de Vitórias</h3></summary>
+    {% if stats.victory_ranking.players %}
+    <h4 class="role-subtitle">Jogadores de Linha</h4>
+    <table>
+        <thead>
+            <tr><th>#</th><th>Jogador</th><th>Vitórias</th></tr>
+        </thead>
+        <tbody>
+            {% for r in stats.victory_ranking.players %}
+            <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.wins }}</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+    {% if stats.victory_ranking.goalkeepers %}
+    <h4 class="role-subtitle">Goleiros</h4>
+    <table>
+        <thead>
+            <tr><th>#</th><th>Goleiro</th><th>Vitórias</th></tr>
+        </thead>
+        <tbody>
+            {% for r in stats.victory_ranking.goalkeepers %}
+            <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.wins }}</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+</details>
+{% endif %}
+
+{# Ficou na mesa #}
+{% if stats.ficou_na_mesa.players or stats.ficou_na_mesa.goalkeepers %}
+<details class="ranking" open>
+    <summary><h3>Ficou na Mesa</h3></summary>
+    {% if stats.ficou_na_mesa.players %}
+    <h4 class="role-subtitle">Jogadores de Linha</h4>
+    <table>
+        <thead>
+            <tr><th>#</th><th>Jogador</th><th>Vitórias</th><th>Empates ao Entrar</th><th>Total</th></tr>
+        </thead>
+        <tbody>
+            {% for r in stats.ficou_na_mesa.players %}
+            <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.vitorias }}</td><td>{{ r.empates }}</td><td>{{ r.total }}</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+    {% if stats.ficou_na_mesa.goalkeepers %}
+    <h4 class="role-subtitle">Goleiros</h4>
+    <table>
+        <thead>
+            <tr><th>#</th><th>Goleiro</th><th>Vitórias</th><th>Empates ao Entrar</th><th>Total</th></tr>
+        </thead>
+        <tbody>
+            {% for r in stats.ficou_na_mesa.goalkeepers %}
+            <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.vitorias }}</td><td>{{ r.empates }}</td><td>{{ r.total }}</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+</details>
+{% endif %}
+
+{# Top scorers #}
+{% if stats.top_scorers.players or stats.top_scorers.goalkeepers %}
+<details class="ranking" open>
+    <summary><h3>Artilharia</h3></summary>
+    {% if stats.top_scorers.players %}
+    <h4 class="role-subtitle">Jogadores de Linha</h4>
+    <table>
+        <thead>
+            <tr><th>#</th><th>Jogador</th><th>Gols</th></tr>
+        </thead>
+        <tbody>
+            {% for r in stats.top_scorers.players %}
+            <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.goals }}</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+    {% if stats.top_scorers.goalkeepers %}
+    <h4 class="role-subtitle">Goleiros</h4>
+    <table>
+        <thead>
+            <tr><th>#</th><th>Goleiro</th><th>Gols</th></tr>
+        </thead>
+        <tbody>
+            {% for r in stats.top_scorers.goalkeepers %}
+            <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.goals }}</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+</details>
+{% endif %}
+
+{# Best goalkeeper #}
+{% if stats.best_goalkeeper %}
+<details class="ranking" open>
+    <summary><h3>Goleiro Menos Vazado</h3></summary>
+    <table>
+        <thead>
+            <tr><th>#</th><th>Goleiro</th><th>Gols Tomados</th><th>Jogos</th></tr>
+        </thead>
+        <tbody>
+            {% for r in stats.best_goalkeeper %}
+            <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.goals_conceded }}</td><td>{{ r.games_played }}</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</details>
+{% endif %}
+
+{# Fominha #}
+{% if stats.fominha.players or stats.fominha.goalkeepers %}
+<details class="ranking" open>
+    <summary><h3>Fominha</h3></summary>
+    {% if stats.fominha.players %}
+    <h4 class="role-subtitle">Jogadores de Linha</h4>
+    <table>
+        <thead>
+            <tr><th>#</th><th>Jogador</th><th>Jogos</th></tr>
+        </thead>
+        <tbody>
+            {% for r in stats.fominha.players %}
+            <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.games }}</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+    {% if stats.fominha.goalkeepers %}
+    <h4 class="role-subtitle">Goleiros</h4>
+    <table>
+        <thead>
+            <tr><th>#</th><th>Goleiro</th><th>Jogos</th></tr>
+        </thead>
+        <tbody>
+            {% for r in stats.fominha.goalkeepers %}
+            <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.games }}</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+</details>
+{% endif %}
+
+{# Game details #}
+<section class="game-details">
+    <h3>Detalhamento dos Jogos</h3>
+    {% for game in stats.game_details %}
+    <details class="game-card" open>
+        <summary class="game-header">
+            <span class="game-number">Jogo {{ game.game_number }}</span>
+            <span class="game-score">
+                <span class="team-label blue">Azul</span>
+                {{ game.score.blue }} x {{ game.score.red }}
+                <span class="team-label red">Vermelho</span>
+            </span>
+        </summary>
+        <div class="game-teams">
+            <div class="team blue-team">
+                <h4>Azul</h4>
+                <ul>
+                    {% for p in game.blue_team %}
+                    <li>{{ p.name }}{% if p.role == 'goalkeeper' %} <span class="gk-badge">GK</span>{% endif %}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="team red-team">
+                <h4>Vermelho</h4>
+                <ul>
+                    {% for p in game.red_team %}
+                    <li>{{ p.name }}{% if p.role == 'goalkeeper' %} <span class="gk-badge">GK</span>{% endif %}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        {% if game.goals %}
+        <div class="game-goals">
+            <h4>Gols</h4>
+            <ul>
+                {% for g in game.goals %}
+                <li>
+                    {{ g.player }} ({{ g.count }})
+                    <span class="team-label {{ g.team }}">{{ 'Azul' if g.team == 'blue' else 'Vermelho' }}</span>
+                    {% if g.own_goal %}<span class="own-goal">Gol Contra</span>{% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    </details>
+    {% endfor %}
+</section>
+{% endblock %}
