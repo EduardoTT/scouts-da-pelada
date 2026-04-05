@@ -91,7 +91,7 @@ def compute_ficou_na_mesa(pelada: Pelada) -> list[dict]:
         }
         for name in all_names
     ]
-    ranking.sort(key=lambda x: x["total"], reverse=True)
+    ranking.sort(key=lambda x: (x["total"], x["vitorias"]), reverse=True)
     return ranking
 
 
@@ -253,7 +253,7 @@ def compute_aggregate_stats(peladas: list[Pelada]) -> dict:
             }
             for n in all_mesa
         ],
-        key=lambda x: x["total"],
+        key=lambda x: (x["total"], x["vitorias"]),
         reverse=True,
     )
 
