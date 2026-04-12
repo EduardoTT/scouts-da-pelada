@@ -31,10 +31,12 @@
         {% if latest_stats.best_goalkeeper %}
         <div class="highlight-card">
             <h3>Pega Tudo</h3>
-            {% set top_gk = latest_stats.best_goalkeeper[0].goals_conceded %}
-            {% set tied = latest_stats.best_goalkeeper | selectattr("goals_conceded", "equalto", top_gk) | list %}
-            <span class="highlight-name">{{ tied | map(attribute="name") | join(", ") }}</span>
-            <span class="highlight-value">{{ top_gk }} gol{{ 's' if top_gk != 1 }} tomado{{ 's' if top_gk != 1 }}</span>
+            {% for gk in latest_stats.best_goalkeeper %}
+            <div class="gk-entry">
+                <span class="highlight-name">{{ gk.name }}</span>
+                <span class="highlight-value">{{ gk.goals_conceded }} gol{{ 's' if gk.goals_conceded != 1 }} tomado{{ 's' if gk.goals_conceded != 1 }}</span>
+            </div>
+            {% endfor %}
         </div>
         {% endif %}
 
