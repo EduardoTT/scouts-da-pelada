@@ -1,0 +1,175 @@
+{
+  "date": "2026-04-12",
+  "referee": "Bigode",
+  "games": [
+    {
+      "game_number": 1,
+      "score": { "blue": 0, "red": 0 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Marcelo", "role": "player" },
+        { "name": "Hulk", "role": "player" },
+        { "name": "Felipão", "role": "player" },
+        { "name": "Confiança", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Ronimar", "role": "goalkeeper" },
+        { "name": "Giga", "role": "player" },
+        { "name": "Ricardo", "role": "player" },
+        { "name": "Fabinho", "role": "player" },
+        { "name": "Dudu", "role": "player" },
+        { "name": "Eric", "role": "player" }
+      ],
+      "goals": []
+    },
+    {
+      "game_number": 2,
+      "score": { "blue": 0, "red": 0 },
+      "team_out": "blue",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Marcelo", "role": "player" },
+        { "name": "Hulk", "role": "player" },
+        { "name": "Felipão", "role": "player" },
+        { "name": "Confiança", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Ronimar", "role": "goalkeeper" },
+        { "name": "Regufe", "role": "player" },
+        { "name": "Leandro Conv", "role": "player" },
+        { "name": "Jorge", "role": "player" },
+        { "name": "Paulo", "role": "player" },
+        { "name": "Fabinho", "role": "player" }
+      ],
+      "goals": []
+    },
+    {
+      "game_number": 3,
+      "score": { "blue": 1, "red": 0 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Hulk", "role": "player" },
+        { "name": "Giga", "role": "player" },
+        { "name": "Eric", "role": "player" },
+        { "name": "Confiança", "role": "player" },
+        { "name": "Ricardo", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Ronimar", "role": "goalkeeper" },
+        { "name": "Marcelo", "role": "player" },
+        { "name": "Leandro Conv", "role": "player" },
+        { "name": "Jorge", "role": "player" },
+        { "name": "Paulo", "role": "player" },
+        { "name": "Fabinho", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Eric", "team": "blue", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 4,
+      "score": { "blue": 1, "red": 1 },
+      "team_out": "blue",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Hulk", "role": "player" },
+        { "name": "Giga", "role": "player" },
+        { "name": "Eric", "role": "player" },
+        { "name": "Confiança", "role": "player" },
+        { "name": "Ricardo", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Ronimar", "role": "goalkeeper" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Paulo", "role": "player" },
+        { "name": "Regufe", "role": "player" },
+        { "name": "Felipão", "role": "player" },
+        { "name": "Marcelo", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Hulk", "team": "blue", "count": 1 },
+        { "player": "Regufe", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 5,
+      "score": { "blue": 1, "red": 1 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Fabinho", "role": "player" },
+        { "name": "Leandro Conv", "role": "player" },
+        { "name": "Jorge", "role": "player" },
+        { "name": "Ricardo", "role": "player" },
+        { "name": "Eric", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Ronimar", "role": "goalkeeper" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Giga", "role": "player" },
+        { "name": "Regufe", "role": "player" },
+        { "name": "Felipão", "role": "player" },
+        { "name": "Marcelo", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Fabinho", "team": "blue", "count": 1 },
+        { "player": "Regufe", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 6,
+      "score": { "blue": 0, "red": 2 },
+      "team_out": "blue",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Fabinho", "role": "player" },
+        { "name": "Leandro Conv", "role": "player" },
+        { "name": "Jorge", "role": "player" },
+        { "name": "Ricardo", "role": "player" },
+        { "name": "Eric", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Ronimar", "role": "goalkeeper" },
+        { "name": "Hulk", "role": "player" },
+        { "name": "Felipão", "role": "player" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Confiança", "role": "player" },
+        { "name": "Marcelo", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Hulk", "team": "red", "count": 1 },
+        { "player": "Salvador", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 7,
+      "score": { "blue": 1, "red": 2 },
+      "team_out": "blue",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Giga", "role": "player" },
+        { "name": "Fabinho", "role": "player" },
+        { "name": "Eric", "role": "player" },
+        { "name": "Regufe", "role": "player" },
+        { "name": "Leandro Conv", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Ronimar", "role": "goalkeeper" },
+        { "name": "Hulk", "role": "player" },
+        { "name": "Felipão", "role": "player" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Confiança", "role": "player" },
+        { "name": "Marcelo", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Regufe", "team": "blue", "count": 1 },
+        { "player": "Hulk", "team": "red", "count": 1 },
+        { "player": "Confiança", "team": "red", "count": 1 }
+      ]
+    }
+  ]
+}

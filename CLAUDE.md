@@ -47,6 +47,7 @@ Depois da pelada vamos cadastrar os novos dados para poder atualizar o site.
   ]
 }
 ```
+A cada entrada de dados, se baseie no arquivo players.py e escolha o valor da chave do dicionário para o nome do jogador.
 
 ### Regras do formato
 - 6 jogadores por time: 1 goleiro (`role: "goalkeeper"`) e 5 de linha (`role: "player"`)
