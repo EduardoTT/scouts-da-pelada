@@ -1,0 +1,181 @@
+{
+  "date": "2026-04-19",
+  "referee": "",
+  "games": [
+    {
+      "game_number": 1,
+      "score": { "blue": 1, "red": 1 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Chan", "role": "player" },
+        { "name": "Giga", "role": "player" },
+        { "name": "Lima", "role": "player" },
+        { "name": "Fabinho", "role": "player" },
+        { "name": "Ricardo", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Ronimar", "role": "goalkeeper" },
+        { "name": "Pedro Cabeludo", "role": "player" },
+        { "name": "Paulo", "role": "player" },
+        { "name": "Felipão", "role": "player" },
+        { "name": "Leonardo Conv", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Giga", "team": "blue", "count": 1 },
+        { "player": "Pedro Cabeludo", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 2,
+      "score": { "blue": 3, "red": 1 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Chan", "role": "player" },
+        { "name": "Giga", "role": "player" },
+        { "name": "Lima", "role": "player" },
+        { "name": "Fabinho", "role": "player" },
+        { "name": "Ricardo", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Ronimar", "role": "goalkeeper" },
+        { "name": "Pedro Cabeludo", "role": "player" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Cadu", "role": "player" },
+        { "name": "Ruan", "role": "player" },
+        { "name": "Wilton Conv", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Fabinho", "team": "blue", "count": 1 },
+        { "player": "Ricardo", "team": "blue", "count": 2 },
+        { "player": "Pedro Cabeludo", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 3,
+      "score": { "blue": 0, "red": 1 },
+      "team_out": "blue",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Chan", "role": "player" },
+        { "name": "Giga", "role": "player" },
+        { "name": "Lima", "role": "player" },
+        { "name": "Fabinho", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Ronimar", "role": "goalkeeper" },
+        { "name": "Felipão", "role": "player" },
+        { "name": "Paulo", "role": "player" },
+        { "name": "Ruan", "role": "player" },
+        { "name": "Leonardo Conv", "role": "player" },
+        { "name": "Cadu", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Cadu", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 4,
+      "score": { "blue": 1, "red": 1 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Giga", "role": "player" },
+        { "name": "Lima", "role": "player" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Pedro Cabeludo", "role": "player" },
+        { "name": "Wilton Conv", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Ronimar", "role": "goalkeeper" },
+        { "name": "Felipão", "role": "player" },
+        { "name": "Paulo", "role": "player" },
+        { "name": "Ruan", "role": "player" },
+        { "name": "Leonardo Conv", "role": "player" },
+        { "name": "Cadu", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Giga", "team": "blue", "count": 1 },
+        { "player": "Paulo", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 5,
+      "score": { "blue": 2, "red": 1 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Giga", "role": "player" },
+        { "name": "Lima", "role": "player" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Pedro Cabeludo", "role": "player" },
+        { "name": "Ricardo", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Ronimar", "role": "goalkeeper" },
+        { "name": "Chan", "role": "player" },
+        { "name": "Fabinho", "role": "player" },
+        { "name": "Felipão", "role": "player" },
+        { "name": "Leonardo Conv", "role": "player" },
+        { "name": "Paulo", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Pedro Cabeludo", "team": "blue", "count": 1 },
+        { "player": "Ricardo", "team": "blue", "count": 1 },
+        { "player": "Felipão", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 6,
+      "score": { "blue": 2, "red": 1 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Giga", "role": "player" },
+        { "name": "Lima", "role": "player" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Cadu", "role": "player" },
+        { "name": "Ricardo", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Ronimar", "role": "goalkeeper" },
+        { "name": "Ruan", "role": "player" },
+        { "name": "Leonardo Conv", "role": "player" },
+        { "name": "Chan", "role": "player" },
+        { "name": "Fabinho", "role": "player" },
+        { "name": "Felipão", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Cadu", "team": "blue", "count": 1 },
+        { "player": "Ricardo", "team": "blue", "count": 1 },
+        { "player": "Leonardo Conv", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 7,
+      "score": { "blue": 2, "red": 1 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Giga", "role": "player" },
+        { "name": "Lima", "role": "player" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Cadu", "role": "player" },
+        { "name": "Ricardo", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Ronimar", "role": "goalkeeper" },
+        { "name": "Felipão", "role": "player" },
+        { "name": "Fabinho", "role": "player" },
+        { "name": "Paulo", "role": "player" },
+        { "name": "Ruan", "role": "player" },
+        { "name": "Leonardo Conv", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Ricardo", "team": "blue", "count": 2 },
+        { "player": "Felipão", "team": "red", "count": 1 }
+      ]
+    }
+  ]
+}
