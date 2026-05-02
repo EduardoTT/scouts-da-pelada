@@ -15,7 +15,7 @@
         { "name": "Harison Conv", "role": "player" }
       ],
       "red_team": [
-        { "name": "Gordo", "role": "goalkeeper" },
+        { "name": "Goleiro Gordo", "role": "goalkeeper" },
         { "name": "Chan", "role": "player" },
         { "name": "Giga", "role": "player" },
         { "name": "Eric", "role": "player" },
@@ -41,7 +41,7 @@
         { "name": "Leonardo Conv", "role": "player" }
       ],
       "red_team": [
-        { "name": "Gordo", "role": "goalkeeper" },
+        { "name": "Goleiro Gordo", "role": "goalkeeper" },
         { "name": "Eric", "role": "player" },
         { "name": "Giga", "role": "player" },
         { "name": "Hulk", "role": "player" },
@@ -63,7 +63,7 @@
         { "name": "Leonardo Conv", "role": "player" }
       ],
       "red_team": [
-        { "name": "Gordo", "role": "goalkeeper" },
+        { "name": "Goleiro Gordo", "role": "goalkeeper" },
         { "name": "Garcez", "role": "player" },
         { "name": "Claudio", "role": "player" },
         { "name": "Denis", "role": "player" },
@@ -87,7 +87,7 @@
         { "name": "Giga", "role": "player" }
       ],
       "red_team": [
-        { "name": "Gordo", "role": "goalkeeper" },
+        { "name": "Goleiro Gordo", "role": "goalkeeper" },
         { "name": "Claudio", "role": "player" },
         { "name": "Garcez", "role": "player" },
         { "name": "Harison Conv", "role": "player" },
@@ -109,7 +109,7 @@
         { "name": "Giga", "role": "player" }
       ],
       "red_team": [
-        { "name": "Gordo", "role": "goalkeeper" },
+        { "name": "Goleiro Gordo", "role": "goalkeeper" },
         { "name": "Fabinho", "role": "player" },
         { "name": "Felipão", "role": "player" },
         { "name": "Regufe", "role": "player" },
@@ -135,7 +135,7 @@
         { "name": "Cadu", "role": "player" }
       ],
       "red_team": [
-        { "name": "Gordo", "role": "goalkeeper" },
+        { "name": "Goleiro Gordo", "role": "goalkeeper" },
         { "name": "Fabinho", "role": "player" },
         { "name": "Regufe", "role": "player" },
         { "name": "Felipão", "role": "player" },
