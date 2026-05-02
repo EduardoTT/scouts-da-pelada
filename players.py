@@ -29,4 +29,7 @@ players = {
     "Leonardo Conv": ["Leonardo Conv", "Leonardo conv", "Leonardo convidado"],
     "Wilton Conv": ["Wilton Conv", "Wilton conv", "Wilton convidado"],
     "Ruan": ["Ruan"],
+    "Claudio": ["Claudio"],
+    "Gordo": ["Gordo", "Goleiro Gordo"],
+    "Harison Conv": ["Harison Conv", "Harison conv", "Harison convidado"],
 }
