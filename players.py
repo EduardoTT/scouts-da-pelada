@@ -16,7 +16,8 @@ players = {
     "Fabinho": ["Fabinho", "Fábio"],
     "Salvador": ["Salvador"],
     "Cadu": ["Cadu"],
-    "Felipão": ["Felipão", "Felipe"],
+    "Felipão": ["Felipão"],
+    "Felipe": ["Felipe"],
     "Eric": ["Eric"],
     "Maurício": ["Maurício"],
     "Denis": ["Denis"],
@@ -32,4 +33,6 @@ players = {
     "Claudio": ["Claudio"],
     "Goleiro Gordo": ["Goleiro Gordo", "Gordo"],
     "Harison Conv": ["Harison Conv", "Harison conv", "Harison convidado"],
+    "GB": ["GB"],
+    "João": ["João", "João Goleiro", "João - Goleiro"],
 }
