@@ -1,6 +1,28 @@
 {% extends "base.html" %}
 {% block title %}Pelada de Domingo{% endblock %}
 
+{% block og %}
+{% if latest %}
+{% set og_desc = "Última pelada: " ~ latest.date ~ ". Veja artilheiro, maior vencedor, pega tudo e rei da mesa." %}
+{% else %}
+{% set og_desc = "Estatísticas das peladas de domingo no condomínio." %}
+{% endif %}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pelada de Domingo">
+<meta property="og:title" content="Pelada de Domingo">
+<meta property="og:description" content="{{ og_desc }}">
+<meta property="og:url" content="{{ site_url }}/">
+{% if preview_url %}
+<meta property="og:image" content="{{ preview_url }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ preview_url }}">
+{% endif %}
+<meta name="twitter:title" content="Pelada de Domingo">
+<meta name="twitter:description" content="{{ og_desc }}">
+{% endblock %}
+
 {% block content %}
 {% if latest %}
 <section class="highlight">

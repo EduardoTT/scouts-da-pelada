@@ -4,6 +4,7 @@ import shutil
 import jinja2
 
 from models import load_all_peladas
+from preview import generate_preview
 from stats import compute_pelada_stats, compute_aggregate_stats, filter_peladas
 
 DATA_DIR = "data"
@@ -12,6 +13,8 @@ TEMPLATE_DIR = "templates"
 STATIC_DIR = "static"
 ROOT_BASE_URL = "."      # for pages at root level (index.html, stats.html)
 PELADA_BASE_URL = ".."   # for pages inside pelada/ subdirectory
+SITE_URL = "https://eduardott.github.io/scouts-da-pelada"
+PREVIEW_FILENAME = "preview.png"
 
 
 def build():
@@ -45,6 +48,13 @@ def build():
         for pelada in peladas
     ]
 
+    # Generate Open Graph preview image for the home page
+    preview_url = None
+    if latest and latest_stats:
+        preview_path = os.path.join(OUTPUT_DIR, PREVIEW_FILENAME)
+        generate_preview(latest, latest_stats, preview_path)
+        preview_url = f"{SITE_URL}/{PREVIEW_FILENAME}"
+
     # Render index
     template = env.get_template("index.html")
     html = template.render(
@@ -53,6 +63,8 @@ def build():
         latest_stats=latest_stats,
         active_tab="peladas",
         base_url=ROOT_BASE_URL,
+        site_url=SITE_URL,
+        preview_url=preview_url,
     )
     with open(os.path.join(OUTPUT_DIR, "index.html"), "w", encoding="utf-8") as f:
         f.write(html)
