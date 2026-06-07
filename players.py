@@ -45,5 +45,8 @@ players = {
     "Lucas": ["Lucas"],
     "Leandro": ["Leandro"],
     "Vicente": ["Vicente"],
-    "Léo Negão": ["Léo Negão", "Léo negão", "Leo negao", "Léo Negao", "Leo Negão", "Léo negao"],
+    "Léo Negão": ["Léo Negão", "Léo negão", "Leo negao", "Léo Negao", "Leo Negão", "Léo negao", "Léo", "Leo"],
+    "Júlio": ["Júlio", "Julio"],
+    "Botafogo": ["Botafogo"],
+    "Fabiano": ["Fabiano"],
 }
