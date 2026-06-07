@@ -44,4 +44,6 @@ players = {
     "Patrick Conv": ["Patrick Conv", "Patrick conv", "Patrick convidado", "Patrick C", "Patrick c"],
     "Lucas": ["Lucas"],
     "Leandro": ["Leandro"],
+    "Vicente": ["Vicente"],
+    "Léo Negão": ["Léo Negão", "Léo negão", "Leo negao", "Léo Negao", "Leo Negão", "Léo negao"],
 }
