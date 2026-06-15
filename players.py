@@ -18,7 +18,7 @@ players = {
     "Cadu": ["Cadu"],
     "Felipão": ["Felipão"],
     "Felipe": ["Felipe"],
-    "Eric": ["Eric"],
+    "Eric": ["Eric", "Erick"],
     "Maurício": ["Maurício"],
     "Denis": ["Denis"],
     "Luis": ["Luis", "Luiz"],
@@ -49,4 +49,7 @@ players = {
     "Júlio": ["Júlio", "Julio"],
     "Botafogo": ["Botafogo"],
     "Fabiano": ["Fabiano"],
+    "Anderson": ["Anderson"],
+    "Batata": ["Batata"],
+    "Cleber": ["Cleber"],
 }
