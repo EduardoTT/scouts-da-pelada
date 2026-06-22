@@ -42,6 +42,7 @@ players = {
     "Michel Conv": ["Michel Conv", "Michel conv", "Michel convidado", "Michel C", "Michel c"],
     "Rafael Conv": ["Rafael Conv", "Rafael conv", "Rafael convidado", "Rafael C", "Rafael c"],
     "Patrick Conv": ["Patrick Conv", "Patrick conv", "Patrick convidado", "Patrick C", "Patrick c"],
+    "Marcos Conv": ["Marcos Conv", "Marcos conv", "Marcos convidado", "Marcos C", "Marcos c", "Marcos"],
     "Lucas": ["Lucas"],
     "Leandro": ["Leandro"],
     "Vicente": ["Vicente"],
