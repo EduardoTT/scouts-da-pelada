@@ -53,4 +53,5 @@ players = {
     "Anderson": ["Anderson"],
     "Batata": ["Batata"],
     "Cleber": ["Cleber"],
+    "Braz": ["Braz"],
 }
