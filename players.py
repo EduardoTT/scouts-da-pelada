@@ -54,4 +54,8 @@ players = {
     "Batata": ["Batata"],
     "Cleber": ["Cleber"],
     "Braz": ["Braz"],
+    "Wilson": ["Wilson"],
+    "Mateus óculos": ["Mateus óculos"],
+    "Mateus gêmeo": ["Mateus gêmeo"],
+    "Lucas gêmeo": ["Lucas gêmeo"],
 }

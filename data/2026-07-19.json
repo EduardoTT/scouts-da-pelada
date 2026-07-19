@@ -1,0 +1,176 @@
+{
+  "date": "2026-07-19",
+  "referee": "Robson",
+  "games": [
+    {
+      "game_number": 1,
+      "score": { "blue": 1, "red": 0 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Garcez", "role": "player" },
+        { "name": "Giga", "role": "player" },
+        { "name": "Chan", "role": "player" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Mateus óculos", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Goleiro Gordo", "role": "goalkeeper" },
+        { "name": "Hulk", "role": "player" },
+        { "name": "Dudu", "role": "player" },
+        { "name": "Felipão", "role": "player" },
+        { "name": "Junior", "role": "player" },
+        { "name": "Wilson", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Giga", "team": "blue", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 2,
+      "score": { "blue": 0, "red": 1 },
+      "team_out": "blue",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Garcez", "role": "player" },
+        { "name": "Giga", "role": "player" },
+        { "name": "Chan", "role": "player" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Mateus óculos", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Goleiro Gordo", "role": "goalkeeper" },
+        { "name": "Dudu", "role": "player" },
+        { "name": "Felipão", "role": "player" },
+        { "name": "Confiança", "role": "player" },
+        { "name": "Luis", "role": "player" },
+        { "name": "João", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Confiança", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 3,
+      "score": { "blue": 0, "red": 1 },
+      "team_out": "blue",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Lucas gêmeo", "role": "player" },
+        { "name": "Mateus gêmeo", "role": "player" },
+        { "name": "Hulk", "role": "player" },
+        { "name": "Junior", "role": "player" },
+        { "name": "Wilson", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Goleiro Gordo", "role": "goalkeeper" },
+        { "name": "Dudu", "role": "player" },
+        { "name": "Felipão", "role": "player" },
+        { "name": "Confiança", "role": "player" },
+        { "name": "Luis", "role": "player" },
+        { "name": "João", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Dudu", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 4,
+      "score": { "blue": 0, "red": 0 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Garcez", "role": "player" },
+        { "name": "Giga", "role": "player" },
+        { "name": "Chan", "role": "player" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Mateus óculos", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Goleiro Gordo", "role": "goalkeeper" },
+        { "name": "Dudu", "role": "player" },
+        { "name": "Felipão", "role": "player" },
+        { "name": "Confiança", "role": "player" },
+        { "name": "Luis", "role": "player" },
+        { "name": "João", "role": "player" }
+      ],
+      "goals": []
+    },
+    {
+      "game_number": 5,
+      "score": { "blue": 1, "red": 1 },
+      "team_out": "blue",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Giga", "role": "player" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Garcez", "role": "player" },
+        { "name": "Chan", "role": "player" },
+        { "name": "Mateus óculos", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Goleiro Gordo", "role": "goalkeeper" },
+        { "name": "Hulk", "role": "player" },
+        { "name": "Wilson", "role": "player" },
+        { "name": "Junior", "role": "player" },
+        { "name": "Mateus gêmeo", "role": "player" },
+        { "name": "Lucas gêmeo", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Garcez", "team": "blue", "count": 1 },
+        { "player": "Hulk", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 6,
+      "score": { "blue": 1, "red": 3 },
+      "team_out": "blue",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Dudu", "role": "player" },
+        { "name": "Felipão", "role": "player" },
+        { "name": "Confiança", "role": "player" },
+        { "name": "João", "role": "player" },
+        { "name": "Luis", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Goleiro Gordo", "role": "goalkeeper" },
+        { "name": "Hulk", "role": "player" },
+        { "name": "Wilson", "role": "player" },
+        { "name": "Junior", "role": "player" },
+        { "name": "Mateus gêmeo", "role": "player" },
+        { "name": "Lucas gêmeo", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Confiança", "team": "blue", "count": 1 },
+        { "player": "Hulk", "team": "red", "count": 1 },
+        { "player": "Mateus gêmeo", "team": "red", "count": 2 }
+      ]
+    },
+    {
+      "game_number": 7,
+      "score": { "blue": 3, "red": 0 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Giga", "role": "player" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Garcez", "role": "player" },
+        { "name": "Chan", "role": "player" },
+        { "name": "Mateus óculos", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Goleiro Gordo", "role": "goalkeeper" },
+        { "name": "Hulk", "role": "player" },
+        { "name": "Wilson", "role": "player" },
+        { "name": "Junior", "role": "player" },
+        { "name": "Mateus gêmeo", "role": "player" },
+        { "name": "Lucas gêmeo", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Garcez", "team": "blue", "count": 2 },
+        { "player": "Mateus óculos", "team": "blue", "count": 1 }
+      ]
+    }
+  ]
+}
