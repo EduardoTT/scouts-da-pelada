@@ -1,0 +1,173 @@
+{
+  "date": "2026-07-26",
+  "referee": "Robson",
+  "games": [
+    {
+      "game_number": 1,
+      "score": { "blue": 0, "red": 0 },
+      "team_out": "blue",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Dudu", "role": "player" },
+        { "name": "Felipão", "role": "player" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Pedro Cabeludo", "role": "player" },
+        { "name": "Fabiano", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Goleiro Gordo", "role": "goalkeeper" },
+        { "name": "Ricardo", "role": "player" },
+        { "name": "Denis", "role": "player" },
+        { "name": "Giga", "role": "player" },
+        { "name": "Garcez", "role": "player" },
+        { "name": "Eric", "role": "player" }
+      ],
+      "goals": []
+    },
+    {
+      "game_number": 2,
+      "score": { "blue": 0, "red": 1 },
+      "team_out": "blue",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "GB", "role": "player" },
+        { "name": "Marcelo", "role": "player" },
+        { "name": "Junior", "role": "player" },
+        { "name": "Paulo", "role": "player" },
+        { "name": "Fabinho", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Goleiro Gordo", "role": "goalkeeper" },
+        { "name": "Ricardo", "role": "player" },
+        { "name": "Denis", "role": "player" },
+        { "name": "Giga", "role": "player" },
+        { "name": "Garcez", "role": "player" },
+        { "name": "Eric", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Garcez", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 3,
+      "score": { "blue": 0, "red": 0 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Confiança", "role": "player" },
+        { "name": "Felipão", "role": "player" },
+        { "name": "Léo Negão", "role": "player" },
+        { "name": "Fabiano", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Goleiro Gordo", "role": "goalkeeper" },
+        { "name": "Ricardo", "role": "player" },
+        { "name": "Denis", "role": "player" },
+        { "name": "Giga", "role": "player" },
+        { "name": "Garcez", "role": "player" },
+        { "name": "Eric", "role": "player" }
+      ],
+      "goals": []
+    },
+    {
+      "game_number": 4,
+      "score": { "blue": 1, "red": 2 },
+      "team_out": "blue",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Confiança", "role": "player" },
+        { "name": "Felipão", "role": "player" },
+        { "name": "Léo Negão", "role": "player" },
+        { "name": "Fabiano", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Goleiro Gordo", "role": "goalkeeper" },
+        { "name": "Dudu", "role": "player" },
+        { "name": "GB", "role": "player" },
+        { "name": "Paulo", "role": "player" },
+        { "name": "Pedro Cabeludo", "role": "player" },
+        { "name": "Salvador", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Felipão", "team": "blue", "count": 1 },
+        { "player": "GB", "team": "red", "count": 1 },
+        { "player": "Pedro Cabeludo", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 5,
+      "score": { "blue": 0, "red": 1 },
+      "team_out": "blue",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Junior", "role": "player" },
+        { "name": "Giga", "role": "player" },
+        { "name": "Marcelo", "role": "player" },
+        { "name": "Fabinho", "role": "player" },
+        { "name": "Denis", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Goleiro Gordo", "role": "goalkeeper" },
+        { "name": "Dudu", "role": "player" },
+        { "name": "GB", "role": "player" },
+        { "name": "Paulo", "role": "player" },
+        { "name": "Pedro Cabeludo", "role": "player" },
+        { "name": "Salvador", "role": "player" }
+      ],
+      "goals": [
+        { "player": "GB", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 6,
+      "score": { "blue": 0, "red": 1 },
+      "team_out": "blue",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Marcelo", "role": "player" },
+        { "name": "Eric", "role": "player" },
+        { "name": "Garcez", "role": "player" },
+        { "name": "Felipão", "role": "player" },
+        { "name": "Léo Negão", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Goleiro Gordo", "role": "goalkeeper" },
+        { "name": "GB", "role": "player" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Paulo", "role": "player" },
+        { "name": "Dudu", "role": "player" },
+        { "name": "Jorge", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Jorge", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 7,
+      "score": { "blue": 3, "red": 2 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Denis", "role": "player" },
+        { "name": "Giga", "role": "player" },
+        { "name": "Marcelo", "role": "player" },
+        { "name": "Junior", "role": "player" },
+        { "name": "Fabinho", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Goleiro Gordo", "role": "goalkeeper" },
+        { "name": "GB", "role": "player" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Paulo", "role": "player" },
+        { "name": "Dudu", "role": "player" },
+        { "name": "Felipão", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Denis", "team": "blue", "count": 2 },
+        { "player": "Marcelo", "team": "blue", "count": 1 },
+        { "player": "Salvador", "team": "red", "count": 1 },
+        { "player": "Dudu", "team": "red", "count": 1 }
+      ]
+    }
+  ]
+}
