@@ -58,4 +58,6 @@ players = {
     "Mateus óculos": ["Mateus óculos"],
     "Mateus gêmeo": ["Mateus gêmeo"],
     "Lucas gêmeo": ["Lucas gêmeo"],
+    "Douglas Conv": ["Douglas Conv", "Douglas conv", "Douglas convidado", "Douglas"],
+    "Rodrigo Conv": ["Rodrigo Conv", "Rodrigo conv", "Rodrigo convidado", "Rodrigo"],
 }
