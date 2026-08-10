@@ -1,0 +1,177 @@
+{
+  "date": "2026-08-09",
+  "referee": "",
+  "games": [
+    {
+      "game_number": 1,
+      "score": { "blue": 1, "red": 2 },
+      "team_out": "blue",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Felipe", "role": "player" },
+        { "name": "Giga", "role": "player" },
+        { "name": "Denis", "role": "player" },
+        { "name": "Pedro Cabeludo", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Goleiro Gordo", "role": "goalkeeper" },
+        { "name": "Junior", "role": "player" },
+        { "name": "Fabinho", "role": "player" },
+        { "name": "Chan", "role": "player" },
+        { "name": "Dudu", "role": "player" },
+        { "name": "Ricardo", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Giga", "team": "blue", "count": 1 },
+        { "player": "Junior", "team": "red", "count": 1 },
+        { "player": "Dudu", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 2,
+      "score": { "blue": 2, "red": 1 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Breno Conv", "role": "player" },
+        { "name": "Felipe Conv", "role": "player" },
+        { "name": "Daniel Conv", "role": "player" },
+        { "name": "Lucas Conv", "role": "player" },
+        { "name": "Douglas Conv", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Goleiro Gordo", "role": "goalkeeper" },
+        { "name": "Junior", "role": "player" },
+        { "name": "Fabinho", "role": "player" },
+        { "name": "Chan", "role": "player" },
+        { "name": "Dudu", "role": "player" },
+        { "name": "Ricardo", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Breno Conv", "team": "blue", "count": 2 },
+        { "player": "Ricardo", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 3,
+      "score": { "blue": 0, "red": 0 },
+      "team_out": "blue",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Breno Conv", "role": "player" },
+        { "name": "Felipe Conv", "role": "player" },
+        { "name": "Daniel Conv", "role": "player" },
+        { "name": "Lucas Conv", "role": "player" },
+        { "name": "Douglas Conv", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Goleiro Gordo", "role": "goalkeeper" },
+        { "name": "Felipão", "role": "player" },
+        { "name": "Denis", "role": "player" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Giga", "role": "player" },
+        { "name": "Pedro Cabeludo", "role": "player" }
+      ],
+      "goals": []
+    },
+    {
+      "game_number": 4,
+      "score": { "blue": 2, "red": 1 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Dudu", "role": "player" },
+        { "name": "Confiança", "role": "player" },
+        { "name": "Chan", "role": "player" },
+        { "name": "Fabinho", "role": "player" },
+        { "name": "Junior", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Goleiro Gordo", "role": "goalkeeper" },
+        { "name": "Felipão", "role": "player" },
+        { "name": "Denis", "role": "player" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Giga", "role": "player" },
+        { "name": "Pedro Cabeludo", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Confiança", "team": "blue", "count": 2 },
+        { "player": "Giga", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 5,
+      "score": { "blue": 0, "red": 2 },
+      "team_out": "blue",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Dudu", "role": "player" },
+        { "name": "Confiança", "role": "player" },
+        { "name": "Chan", "role": "player" },
+        { "name": "Fabinho", "role": "player" },
+        { "name": "Junior", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Goleiro Gordo", "role": "goalkeeper" },
+        { "name": "Ricardo", "role": "player" },
+        { "name": "Breno Conv", "role": "player" },
+        { "name": "Douglas Conv", "role": "player" },
+        { "name": "Lucas Conv", "role": "player" },
+        { "name": "Felipe Conv", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Ricardo", "team": "red", "count": 1 },
+        { "player": "Felipe Conv", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 6,
+      "score": { "blue": 0, "red": 0 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Denis", "role": "player" },
+        { "name": "Giga", "role": "player" },
+        { "name": "Felipão", "role": "player" },
+        { "name": "Daniel Conv", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Goleiro Gordo", "role": "goalkeeper" },
+        { "name": "Ricardo", "role": "player" },
+        { "name": "Breno Conv", "role": "player" },
+        { "name": "Douglas Conv", "role": "player" },
+        { "name": "Lucas Conv", "role": "player" },
+        { "name": "Felipe Conv", "role": "player" }
+      ],
+      "goals": []
+    },
+    {
+      "game_number": 7,
+      "score": { "blue": 2, "red": 1 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Denis", "role": "player" },
+        { "name": "Giga", "role": "player" },
+        { "name": "Felipão", "role": "player" },
+        { "name": "Daniel Conv", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Goleiro Gordo", "role": "goalkeeper" },
+        { "name": "Dudu", "role": "player" },
+        { "name": "Chan", "role": "player" },
+        { "name": "Breno Conv", "role": "player" },
+        { "name": "Douglas Conv", "role": "player" },
+        { "name": "Confiança", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Felipão", "team": "blue", "count": 1 },
+        { "player": "Daniel Conv", "team": "blue", "count": 1 },
+        { "player": "Chan", "team": "red", "count": 1 }
+      ]
+    }
+  ]
+}

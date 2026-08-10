@@ -3,7 +3,7 @@ players = {
     "Giga": ["Giga", "Gigante", "Gigantinho"],
     "Wesley": ["Wesley"],
     "Jorge": ["Jorge"],
-    "Pedro Cabeludo": ["Pedro", "Pedro Cabeludo"],
+    "Pedro Cabeludo": ["Pedro", "Pedro Cabeludo", "Pedro anos 80"],
     "Dudu": ["Dudu"],
     "Marcelo": ["Marcelo"],
     "Garcez": ["Garcez"],
@@ -60,4 +60,7 @@ players = {
     "Lucas gêmeo": ["Lucas gêmeo"],
     "Douglas Conv": ["Douglas Conv", "Douglas conv", "Douglas convidado", "Douglas"],
     "Rodrigo Conv": ["Rodrigo Conv", "Rodrigo conv", "Rodrigo convidado", "Rodrigo"],
+    "Breno Conv": ["Breno Conv", "Breno conv", "Breno convidado", "Breno"],
+    "Daniel Conv": ["Daniel Conv", "Daniel conv", "Daniel convidado", "Daniel"],
+    "Lucas Conv": ["Lucas Conv", "Lucas conv", "Lucas convidado"],
 }
