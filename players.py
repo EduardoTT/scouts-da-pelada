@@ -22,7 +22,7 @@ players = {
     "Maurício": ["Maurício"],
     "Denis": ["Denis"],
     "Luis": ["Luis", "Luiz"],
-    "Pedro": ["Pedro"],
+    "Pedro": ["Pedro", "Pedrão", "Pedrao"],
     "Lima": ["Lima"],
     "Elmo": ["Elmo"],
     "Leandro Conv": ["Leandro Conv", "Leandro conv", "Leandro convidado"],
