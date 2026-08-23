@@ -1,0 +1,207 @@
+{
+  "date": "2026-08-23",
+  "referee": "Robson",
+  "games": [
+    {
+      "game_number": 1,
+      "score": { "blue": 1, "red": 0 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Ricardo", "role": "player" },
+        { "name": "Denis", "role": "player" },
+        { "name": "Hulk", "role": "player" },
+        { "name": "Junior", "role": "player" },
+        { "name": "Garcez", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Goleiro Barba", "role": "goalkeeper" },
+        { "name": "Lima", "role": "player" },
+        { "name": "Mateus Conv", "role": "player" },
+        { "name": "Fabiano", "role": "player" },
+        { "name": "Dudu", "role": "player" },
+        { "name": "Marcelo", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Hulk", "team": "blue", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 2,
+      "score": { "blue": 2, "red": 0 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Ricardo", "role": "player" },
+        { "name": "Denis", "role": "player" },
+        { "name": "Hulk", "role": "player" },
+        { "name": "Junior", "role": "player" },
+        { "name": "Garcez", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Goleiro Barba", "role": "goalkeeper" },
+        { "name": "Renan", "role": "player" },
+        { "name": "Paulo", "role": "player" },
+        { "name": "Arthur", "role": "player" },
+        { "name": "Bruno", "role": "player" },
+        { "name": "Leonardo Conv", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Ricardo", "team": "blue", "count": 1 },
+        { "player": "Garcez", "team": "blue", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 3,
+      "score": { "blue": 2, "red": 1 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Ricardo", "role": "player" },
+        { "name": "Denis", "role": "player" },
+        { "name": "Hulk", "role": "player" },
+        { "name": "Junior", "role": "player" },
+        { "name": "Garcez", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Goleiro Barba", "role": "goalkeeper" },
+        { "name": "Breno Conv", "role": "player" },
+        { "name": "Lima", "role": "player" },
+        { "name": "Dudu", "role": "player" },
+        { "name": "Marcelo", "role": "player" },
+        { "name": "Mateus Conv", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Hulk", "team": "blue", "count": 1 },
+        { "player": "Garcez", "team": "blue", "count": 1 },
+        { "player": "Marcelo", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 4,
+      "score": { "blue": 5, "red": 1 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Ricardo", "role": "player" },
+        { "name": "Denis", "role": "player" },
+        { "name": "Hulk", "role": "player" },
+        { "name": "Junior", "role": "player" },
+        { "name": "Garcez", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Goleiro Barba", "role": "goalkeeper" },
+        { "name": "Confiança", "role": "player" },
+        { "name": "Leonardo Conv", "role": "player" },
+        { "name": "Arthur", "role": "player" },
+        { "name": "Bruno", "role": "player" },
+        { "name": "Paulo", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Ricardo", "team": "blue", "count": 2 },
+        { "player": "Denis", "team": "blue", "count": 1 },
+        { "player": "Hulk", "team": "blue", "count": 1 },
+        { "player": "Junior", "team": "blue", "count": 1 },
+        { "player": "Confiança", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 5,
+      "score": { "blue": 1, "red": 0 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Ricardo", "role": "player" },
+        { "name": "Denis", "role": "player" },
+        { "name": "Hulk", "role": "player" },
+        { "name": "Junior", "role": "player" },
+        { "name": "Garcez", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Goleiro Barba", "role": "goalkeeper" },
+        { "name": "Marcelo", "role": "player" },
+        { "name": "Mateus Conv", "role": "player" },
+        { "name": "Fabiano", "role": "player" },
+        { "name": "Dudu", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Hulk", "team": "blue", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 6,
+      "score": { "blue": 3, "red": 0 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Ricardo", "role": "player" },
+        { "name": "Denis", "role": "player" },
+        { "name": "Hulk", "role": "player" },
+        { "name": "Junior", "role": "player" },
+        { "name": "Garcez", "role": "player" },
+        { "name": "Dudu", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Goleiro Barba", "role": "goalkeeper" },
+        { "name": "Breno Conv", "role": "player" },
+        { "name": "Confiança", "role": "player" },
+        { "name": "Leonardo Conv", "role": "player" },
+        { "name": "Paulo", "role": "player" },
+        { "name": "Rodrigo Conv", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Denis", "team": "blue", "count": 1 },
+        { "player": "Garcez", "team": "blue", "count": 1 },
+        { "player": "Dudu", "team": "blue", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 7,
+      "score": { "blue": 1, "red": 0 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Denis", "role": "player" },
+        { "name": "Hulk", "role": "player" },
+        { "name": "Junior", "role": "player" },
+        { "name": "Garcez", "role": "player" },
+        { "name": "Dudu", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Goleiro Barba", "role": "goalkeeper" },
+        { "name": "Marcelo", "role": "player" },
+        { "name": "Confiança", "role": "player" },
+        { "name": "Renan", "role": "player" },
+        { "name": "Mateus Conv", "role": "player" },
+        { "name": "Bruno", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Dudu", "team": "blue", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 8,
+      "score": { "blue": 1, "red": 0 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Denis", "role": "player" },
+        { "name": "Hulk", "role": "player" },
+        { "name": "Junior", "role": "player" },
+        { "name": "Garcez", "role": "player" },
+        { "name": "Dudu", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Goleiro Barba", "role": "goalkeeper" },
+        { "name": "Breno Conv", "role": "player" },
+        { "name": "Leonardo Conv", "role": "player" },
+        { "name": "Paulo", "role": "player" },
+        { "name": "Marcelo", "role": "player" },
+        { "name": "Rodrigo Conv", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Denis", "team": "blue", "count": 1 }
+      ]
+    }
+  ]
+}

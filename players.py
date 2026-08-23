@@ -63,4 +63,8 @@ players = {
     "Breno Conv": ["Breno Conv", "Breno conv", "Breno convidado", "Breno"],
     "Daniel Conv": ["Daniel Conv", "Daniel conv", "Daniel convidado", "Daniel"],
     "Lucas Conv": ["Lucas Conv", "Lucas conv", "Lucas convidado"],
+    "Goleiro Barba": ["Goleiro Barba", "Goleiro barba", "Barba"],
+    "Renan": ["Renan", "Renam"],
+    "Arthur": ["Arthur", "Artur"],
+    "Bruno": ["Bruno"],
 }
