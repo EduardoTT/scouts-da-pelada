@@ -113,7 +113,8 @@
         { "name": "Junior", "role": "player" }
       ],
       "red_team": [
-        { "name": "Goleiro Barba", "role": "goalkeeper" },
+        { "name": "João", "role": "goalkeeper" },
+        { "name": "Goleiro Barba", "role": "player" },
         { "name": "Breno Conv", "role": "player" },
         { "name": "Ronan", "role": "player" },
         { "name": "Léo Negão", "role": "player" },
@@ -136,7 +137,8 @@
         { "name": "Giga", "role": "player" }
       ],
       "red_team": [
-        { "name": "Goleiro Barba", "role": "goalkeeper" },
+        { "name": "João", "role": "goalkeeper" },
+        { "name": "Goleiro Barba", "role": "player" },
         { "name": "Breno Conv", "role": "player" },
         { "name": "Ronan", "role": "player" },
         { "name": "Léo Negão", "role": "player" },
@@ -183,7 +185,8 @@
         { "name": "Giga", "role": "player" }
       ],
       "red_team": [
-        { "name": "Goleiro Barba", "role": "goalkeeper" },
+        { "name": "João", "role": "goalkeeper" },
+        { "name": "Goleiro Barba", "role": "player" },
         { "name": "Salvador", "role": "player" },
         { "name": "Dudu", "role": "player" },
         { "name": "Breno Conv", "role": "player" },
