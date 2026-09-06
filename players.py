@@ -67,4 +67,5 @@ players = {
     "Renan": ["Renan", "Renam"],
     "Arthur": ["Arthur", "Artur"],
     "Bruno": ["Bruno"],
+    "Ronan": ["Ronan"],
 }

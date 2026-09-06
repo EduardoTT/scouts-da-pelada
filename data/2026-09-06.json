@@ -1,0 +1,198 @@
+{
+  "date": "2026-09-06",
+  "referee": "Negão",
+  "games": [
+    {
+      "game_number": 1,
+      "score": { "blue": 2, "red": 1 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Mateus Conv", "role": "player" },
+        { "name": "Garcez", "role": "player" },
+        { "name": "Eric", "role": "player" },
+        { "name": "Giga", "role": "player" },
+        { "name": "Denis", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "João", "role": "goalkeeper" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Junior", "role": "player" },
+        { "name": "Chan", "role": "player" },
+        { "name": "Paulo", "role": "player" },
+        { "name": "Dudu", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Eric", "team": "blue", "count": 1 },
+        { "player": "Giga", "team": "blue", "count": 1 },
+        { "player": "Salvador", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 2,
+      "score": { "blue": 1, "red": 1 },
+      "team_out": "blue",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Mateus Conv", "role": "player" },
+        { "name": "Garcez", "role": "player" },
+        { "name": "Eric", "role": "player" },
+        { "name": "Giga", "role": "player" },
+        { "name": "Denis", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "João", "role": "goalkeeper" },
+        { "name": "Goleiro Barba", "role": "player" },
+        { "name": "Léo Negão", "role": "player" },
+        { "name": "Ronan", "role": "player" },
+        { "name": "Breno Conv", "role": "player" },
+        { "name": "Rodrigo Conv", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Denis", "team": "blue", "count": 1 },
+        { "player": "Ronan", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 3,
+      "score": { "blue": 0, "red": 0 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Paulo", "role": "player" },
+        { "name": "Chan", "role": "player" },
+        { "name": "Dudu", "role": "player" },
+        { "name": "Junior", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "João", "role": "goalkeeper" },
+        { "name": "Goleiro Barba", "role": "player" },
+        { "name": "Léo Negão", "role": "player" },
+        { "name": "Ronan", "role": "player" },
+        { "name": "Breno Conv", "role": "player" },
+        { "name": "Rodrigo Conv", "role": "player" }
+      ],
+      "goals": []
+    },
+    {
+      "game_number": 4,
+      "score": { "blue": 2, "red": 0 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Paulo", "role": "player" },
+        { "name": "Chan", "role": "player" },
+        { "name": "Dudu", "role": "player" },
+        { "name": "Junior", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "João", "role": "goalkeeper" },
+        { "name": "Eric", "role": "player" },
+        { "name": "Garcez", "role": "player" },
+        { "name": "Denis", "role": "player" },
+        { "name": "Giga", "role": "player" },
+        { "name": "Mateus Conv", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Paulo", "team": "blue", "count": 1 },
+        { "player": "Dudu", "team": "blue", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 5,
+      "score": { "blue": 0, "red": 1 },
+      "team_out": "blue",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Paulo", "role": "player" },
+        { "name": "Chan", "role": "player" },
+        { "name": "Dudu", "role": "player" },
+        { "name": "Junior", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Goleiro Barba", "role": "goalkeeper" },
+        { "name": "Breno Conv", "role": "player" },
+        { "name": "Ronan", "role": "player" },
+        { "name": "Léo Negão", "role": "player" },
+        { "name": "Rodrigo Conv", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Ronan", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 6,
+      "score": { "blue": 1, "red": 0 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Denis", "role": "player" },
+        { "name": "Mateus Conv", "role": "player" },
+        { "name": "Garcez", "role": "player" },
+        { "name": "Eric", "role": "player" },
+        { "name": "Giga", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Goleiro Barba", "role": "goalkeeper" },
+        { "name": "Breno Conv", "role": "player" },
+        { "name": "Ronan", "role": "player" },
+        { "name": "Léo Negão", "role": "player" },
+        { "name": "Rodrigo Conv", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Mateus Conv", "team": "blue", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 7,
+      "score": { "blue": 3, "red": 0 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Denis", "role": "player" },
+        { "name": "Mateus Conv", "role": "player" },
+        { "name": "Garcez", "role": "player" },
+        { "name": "Eric", "role": "player" },
+        { "name": "Giga", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "João", "role": "goalkeeper" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Dudu", "role": "player" },
+        { "name": "Junior", "role": "player" },
+        { "name": "Paulo", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Denis", "team": "blue", "count": 1 },
+        { "player": "Giga", "team": "blue", "count": 2 }
+      ]
+    },
+    {
+      "game_number": 8,
+      "score": { "blue": 3, "red": 0 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Denis", "role": "player" },
+        { "name": "Mateus Conv", "role": "player" },
+        { "name": "Garcez", "role": "player" },
+        { "name": "Eric", "role": "player" },
+        { "name": "Giga", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Goleiro Barba", "role": "goalkeeper" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Dudu", "role": "player" },
+        { "name": "Breno Conv", "role": "player" },
+        { "name": "Léo Negão", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Denis", "team": "blue", "count": 2 },
+        { "player": "Garcez", "team": "blue", "count": 1 }
+      ]
+    }
+  ]
+}
