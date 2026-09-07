@@ -1,5 +1,7 @@
 from datetime import date
 
+import pytest
+
 from models import Game, Goal, Pelada, Player
 from stats import (
     compute_aggregate_stats,
@@ -568,3 +570,124 @@ def test_fominha_counts_all_games():
     assert participation["K"] == 1  # jogou só no jogo 2
     gk_participation = {r["name"]: r["games"] for r in agg["fominha"]["goalkeepers"]}
     assert gk_participation["GK1"] == 2
+
+
+# --- Médias por jogo / por domingo ---
+
+
+def test_aggregate_medias_por_jogo():
+    """A vence 2 dos 3 jogos que disputa, marcando 3 gols; F joga 3 e marca 1."""
+    pelada1 = Pelada(
+        date="2026-03-01",
+        referee="Juiz",
+        games=[
+            _make_game(
+                1,
+                2,
+                0,
+                "red",
+                ["A", "B", "C", "D", "E"],
+                ["F", "G", "H", "I", "J"],
+                goals=[_goal("A", "blue", 2)],
+                blue_gk="GK1",
+                red_gk="GK2",
+            ),
+            _make_game(
+                2,
+                1,
+                0,
+                "red",
+                ["A", "B", "C", "D", "E"],
+                ["K", "L", "M", "N", "O"],
+                goals=[_goal("A", "blue", 1)],
+                blue_gk="GK1",
+                red_gk="GK2",
+            ),
+        ],
+    )
+    pelada2 = Pelada(
+        date="2026-03-08",
+        referee="Juiz",
+        games=[
+            _make_game(
+                1,
+                0,
+                1,
+                "blue",
+                ["A", "B", "C", "D", "E"],
+                ["F", "G", "H", "I", "J"],
+                goals=[_goal("F", "red", 1)],
+                blue_gk="GK1",
+                red_gk="GK2",
+            ),
+        ],
+    )
+    agg = compute_aggregate_stats([pelada1, pelada2])
+
+    # Maior vencedor: A tem 2 vitórias em 3 jogos
+    vencedor = {r["name"]: r for r in agg["maior_vencedor"]["players"]}
+    assert vencedor["A"]["games"] == 3
+    assert vencedor["A"]["per_game"] == pytest.approx(2 / 3)
+
+    # Goleador: A tem 3 gols em 3 jogos; F tem 1 gol em 2 jogos
+    goleador = {r["name"]: r for r in agg["goleador"]["players"]}
+    assert goleador["A"]["per_game"] == pytest.approx(1.0)
+    assert goleador["F"]["games"] == 2
+    assert goleador["F"]["per_game"] == pytest.approx(0.5)
+
+    # Rei da mesa: média usa o total (vitórias + empates ao entrar)
+    mesa = {r["name"]: r for r in agg["rei_da_mesa"]["players"]}
+    assert mesa["A"]["per_game"] == pytest.approx(mesa["A"]["total"] / 3)
+
+    # Pega tudo: GK2 tomou 3 gols em 3 jogos
+    pega_tudo = {r["name"]: r for r in agg["pega_tudo"]}
+    assert pega_tudo["GK2"]["goals_conceded"] == 3
+    assert pega_tudo["GK2"]["games_played"] == 3
+    assert pega_tudo["GK2"]["per_game"] == pytest.approx(1.0)
+
+
+def test_aggregate_fominha_por_domingo():
+    """A joga 2 jogos num domingo e 1 no outro: 3 jogos em 2 domingos."""
+    pelada1 = Pelada(
+        date="2026-03-01",
+        referee="Juiz",
+        games=[
+            _make_game(
+                1, 1, 0, "red", ["A", "B"], ["F", "G"], blue_gk="GK1", red_gk="GK2"
+            ),
+            _make_game(
+                2, 1, 0, "red", ["A", "B"], ["K", "L"], blue_gk="GK1", red_gk="GK2"
+            ),
+        ],
+    )
+    pelada2 = Pelada(
+        date="2026-03-08",
+        referee="Juiz",
+        games=[
+            _make_game(
+                1, 1, 0, "red", ["A", "B"], ["F", "G"], blue_gk="GK1", red_gk="GK2"
+            ),
+        ],
+    )
+    agg = compute_aggregate_stats([pelada1, pelada2])
+
+    fominha = {r["name"]: r for r in agg["fominha"]["players"]}
+    assert fominha["A"]["games"] == 3
+    assert fominha["A"]["sundays"] == 2
+    assert fominha["A"]["per_sunday"] == pytest.approx(1.5)
+
+    # K só apareceu num domingo, num jogo
+    assert fominha["K"]["games"] == 1
+    assert fominha["K"]["sundays"] == 1
+    assert fominha["K"]["per_sunday"] == pytest.approx(1.0)
+
+    # Goleiro: GK1 jogou os 3 jogos em 2 domingos
+    gks = {r["name"]: r for r in agg["fominha"]["goalkeepers"]}
+    assert gks["GK1"]["sundays"] == 2
+    assert gks["GK1"]["per_sunday"] == pytest.approx(1.5)
+
+
+def test_per_sem_divisor_nao_estoura():
+    agg = compute_aggregate_stats([])
+    assert agg["fominha"]["players"] == []
+    assert agg["goleador"]["players"] == []

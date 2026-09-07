@@ -131,6 +131,11 @@ main {
 }
 
 /* === Tables === */
+.table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -481,5 +486,17 @@ footer {
     .blue-team {
         border-right: none;
         border-bottom: 1px solid #eee;
+    }
+
+    /* Tabelas ficaram mais largas com a coluna de média */
+    thead th {
+        padding: 0.4rem 0.25rem;
+        font-size: 0.65rem;
+        letter-spacing: 0;
+    }
+
+    tbody td {
+        padding: 0.4rem 0.25rem;
+        font-size: 0.8rem;
     }
 }

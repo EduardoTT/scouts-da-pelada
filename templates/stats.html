@@ -22,25 +22,29 @@
             {% if agg.maior_vencedor.players or agg.maior_vencedor.goalkeepers %}
                 {% if agg.maior_vencedor.players %}
                 <h4 class="role-subtitle">Jogadores de Linha</h4>
+                <div class="table-wrap">
                 <table>
-                    <thead><tr><th>#</th><th>Jogador</th><th>Vitórias</th></tr></thead>
+                    <thead><tr><th>#</th><th>Jogador</th><th>Vitórias</th><th>Vitórias/<wbr>Jogo</th></tr></thead>
                     <tbody>
                         {% for r in agg.maior_vencedor.players %}
-                        <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.wins }}</td></tr>
+                        <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.wins }}</td><td>{{ r.per_game|media }}</td></tr>
                         {% endfor %}
                     </tbody>
                 </table>
+                </div>
                 {% endif %}
                 {% if agg.maior_vencedor.goalkeepers %}
                 <h4 class="role-subtitle">Goleiros</h4>
+                <div class="table-wrap">
                 <table>
-                    <thead><tr><th>#</th><th>Goleiro</th><th>Vitórias</th></tr></thead>
+                    <thead><tr><th>#</th><th>Goleiro</th><th>Vitórias</th><th>Vitórias/<wbr>Jogo</th></tr></thead>
                     <tbody>
                         {% for r in agg.maior_vencedor.goalkeepers %}
-                        <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.wins }}</td></tr>
+                        <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.wins }}</td><td>{{ r.per_game|media }}</td></tr>
                         {% endfor %}
                     </tbody>
                 </table>
+                </div>
                 {% endif %}
             {% else %}
             <p class="no-data">Sem dados para este período.</p>
@@ -53,25 +57,29 @@
             {% if agg.rei_da_mesa.players or agg.rei_da_mesa.goalkeepers %}
                 {% if agg.rei_da_mesa.players %}
                 <h4 class="role-subtitle">Jogadores de Linha</h4>
+                <div class="table-wrap">
                 <table>
-                    <thead><tr><th>#</th><th>Jogador</th><th>Vitórias</th><th>Empates</th><th>Total</th></tr></thead>
+                    <thead><tr><th>#</th><th>Jogador</th><th>Vitórias</th><th>Empates</th><th>Total</th><th>Mesa/<wbr>Jogo</th></tr></thead>
                     <tbody>
                         {% for r in agg.rei_da_mesa.players %}
-                        <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.vitorias }}</td><td>{{ r.empates }}</td><td>{{ r.total }}</td></tr>
+                        <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.vitorias }}</td><td>{{ r.empates }}</td><td>{{ r.total }}</td><td>{{ r.per_game|media }}</td></tr>
                         {% endfor %}
                     </tbody>
                 </table>
+                </div>
                 {% endif %}
                 {% if agg.rei_da_mesa.goalkeepers %}
                 <h4 class="role-subtitle">Goleiros</h4>
+                <div class="table-wrap">
                 <table>
-                    <thead><tr><th>#</th><th>Goleiro</th><th>Vitórias</th><th>Empates</th><th>Total</th></tr></thead>
+                    <thead><tr><th>#</th><th>Goleiro</th><th>Vitórias</th><th>Empates</th><th>Total</th><th>Mesa/<wbr>Jogo</th></tr></thead>
                     <tbody>
                         {% for r in agg.rei_da_mesa.goalkeepers %}
-                        <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.vitorias }}</td><td>{{ r.empates }}</td><td>{{ r.total }}</td></tr>
+                        <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.vitorias }}</td><td>{{ r.empates }}</td><td>{{ r.total }}</td><td>{{ r.per_game|media }}</td></tr>
                         {% endfor %}
                     </tbody>
                 </table>
+                </div>
                 {% endif %}
             {% else %}
             <p class="no-data">Sem dados para este período.</p>
@@ -84,25 +92,29 @@
             {% if agg.goleador.players or agg.goleador.goalkeepers %}
                 {% if agg.goleador.players %}
                 <h4 class="role-subtitle">Jogadores de Linha</h4>
+                <div class="table-wrap">
                 <table>
-                    <thead><tr><th>#</th><th>Jogador</th><th>Gols</th></tr></thead>
+                    <thead><tr><th>#</th><th>Jogador</th><th>Gols</th><th>Gols/<wbr>Jogo</th></tr></thead>
                     <tbody>
                         {% for r in agg.goleador.players %}
-                        <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.goals }}</td></tr>
+                        <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.goals }}</td><td>{{ r.per_game|media }}</td></tr>
                         {% endfor %}
                     </tbody>
                 </table>
+                </div>
                 {% endif %}
                 {% if agg.goleador.goalkeepers %}
                 <h4 class="role-subtitle">Goleiros</h4>
+                <div class="table-wrap">
                 <table>
-                    <thead><tr><th>#</th><th>Goleiro</th><th>Gols</th></tr></thead>
+                    <thead><tr><th>#</th><th>Goleiro</th><th>Gols</th><th>Gols/<wbr>Jogo</th></tr></thead>
                     <tbody>
                         {% for r in agg.goleador.goalkeepers %}
-                        <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.goals }}</td></tr>
+                        <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.goals }}</td><td>{{ r.per_game|media }}</td></tr>
                         {% endfor %}
                     </tbody>
                 </table>
+                </div>
                 {% endif %}
             {% else %}
             <p class="no-data">Sem dados para este período.</p>
@@ -113,14 +125,16 @@
         <details class="ranking" open>
             <summary><h3>Pega Tudo</h3></summary>
             {% if agg.pega_tudo %}
+            <div class="table-wrap">
             <table>
-                <thead><tr><th>#</th><th>Goleiro</th><th>Gols Tomados</th><th>Jogos</th></tr></thead>
+                <thead><tr><th>#</th><th>Goleiro</th><th>Gols Tomados</th><th>Jogos</th><th>Gols/<wbr>Jogo</th></tr></thead>
                 <tbody>
                     {% for r in agg.pega_tudo %}
-                    <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.goals_conceded }}</td><td>{{ r.games_played }}</td></tr>
+                    <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.goals_conceded }}</td><td>{{ r.games_played }}</td><td>{{ r.per_game|media }}</td></tr>
                     {% endfor %}
                 </tbody>
             </table>
+            </div>
             {% else %}
             <p class="no-data">Sem dados para este período.</p>
             {% endif %}
@@ -132,25 +146,29 @@
             {% if agg.fominha.players or agg.fominha.goalkeepers %}
                 {% if agg.fominha.players %}
                 <h4 class="role-subtitle">Jogadores de Linha</h4>
+                <div class="table-wrap">
                 <table>
-                    <thead><tr><th>#</th><th>Jogador</th><th>Jogos</th></tr></thead>
+                    <thead><tr><th>#</th><th>Jogador</th><th>Jogos</th><th>Jogos/<wbr>Domingo</th></tr></thead>
                     <tbody>
                         {% for r in agg.fominha.players %}
-                        <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.games }}</td></tr>
+                        <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.games }}</td><td>{{ r.per_sunday|media }}</td></tr>
                         {% endfor %}
                     </tbody>
                 </table>
+                </div>
                 {% endif %}
                 {% if agg.fominha.goalkeepers %}
                 <h4 class="role-subtitle">Goleiros</h4>
+                <div class="table-wrap">
                 <table>
-                    <thead><tr><th>#</th><th>Goleiro</th><th>Jogos</th></tr></thead>
+                    <thead><tr><th>#</th><th>Goleiro</th><th>Jogos</th><th>Jogos/<wbr>Domingo</th></tr></thead>
                     <tbody>
                         {% for r in agg.fominha.goalkeepers %}
-                        <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.games }}</td></tr>
+                        <tr><td>{{ loop.index }}</td><td>{{ r.name }}</td><td>{{ r.games }}</td><td>{{ r.per_sunday|media }}</td></tr>
                         {% endfor %}
                     </tbody>
                 </table>
+                </div>
                 {% endif %}
             {% else %}
             <p class="no-data">Sem dados para este período.</p>
@@ -161,6 +179,7 @@
         <details class="ranking" open>
             <summary><h3>Apitador</h3></summary>
             {% if agg.apitador %}
+            <div class="table-wrap">
             <table>
                 <thead><tr><th>#</th><th>Juíz</th><th>Peladas</th></tr></thead>
                 <tbody>
@@ -169,6 +188,7 @@
                     {% endfor %}
                 </tbody>
             </table>
+            </div>
             {% else %}
             <p class="no-data">Sem dados para este período.</p>
             {% endif %}

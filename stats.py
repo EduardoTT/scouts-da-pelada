@@ -28,6 +28,11 @@ def _split_by_role(ranking: list[dict], role_map: dict[str, str]) -> dict:
     return {"players": players, "goalkeepers": goalkeepers}
 
 
+def _per(total: int, divisor: int) -> float:
+    """Média por jogo/domingo, 0 quando não há divisor."""
+    return total / divisor if divisor else 0.0
+
+
 def _opposite_side(side: str) -> str:
     return "red" if side == "blue" else "blue"
 
@@ -207,6 +212,7 @@ def compute_aggregate_stats(peladas: list[Pelada]) -> dict:
     total_conceded = defaultdict(int)
     total_gk_games = defaultdict(int)
     total_participation = defaultdict(int)
+    total_sundays = defaultdict(int)
     total_referee = defaultdict(int)
 
     for pelada in peladas:
@@ -229,15 +235,27 @@ def compute_aggregate_stats(peladas: list[Pelada]) -> dict:
             total_gk_games[entry["name"]] += entry["games_played"]
 
         # Participação
+        pelada_names = set()
         for game in pelada.games:
             for p in game.blue_team + game.red_team:
                 total_participation[p.name] += 1
+                pelada_names.add(p.name)
+        for name in pelada_names:
+            total_sundays[name] += 1
 
         # Juíz
         total_referee[pelada.referee] += 1
 
     maior_vencedor = sorted(
-        [{"name": n, "wins": w} for n, w in total_wins.items()],
+        [
+            {
+                "name": n,
+                "wins": w,
+                "games": total_participation[n],
+                "per_game": _per(w, total_participation[n]),
+            }
+            for n, w in total_wins.items()
+        ],
         key=lambda x: x["wins"],
         reverse=True,
     )
@@ -250,6 +268,11 @@ def compute_aggregate_stats(peladas: list[Pelada]) -> dict:
                 "vitorias": total_mesa_vitorias[n],
                 "empates": total_mesa_empates[n],
                 "total": total_mesa_vitorias[n] + total_mesa_empates[n],
+                "games": total_participation[n],
+                "per_game": _per(
+                    total_mesa_vitorias[n] + total_mesa_empates[n],
+                    total_participation[n],
+                ),
             }
             for n in all_mesa
         ],
@@ -258,7 +281,15 @@ def compute_aggregate_stats(peladas: list[Pelada]) -> dict:
     )
 
     goleador = sorted(
-        [{"name": n, "goals": g} for n, g in total_goals.items()],
+        [
+            {
+                "name": n,
+                "goals": g,
+                "games": total_participation[n],
+                "per_game": _per(g, total_participation[n]),
+            }
+            for n, g in total_goals.items()
+        ],
         key=lambda x: x["goals"],
         reverse=True,
     )
@@ -269,6 +300,7 @@ def compute_aggregate_stats(peladas: list[Pelada]) -> dict:
                 "name": n,
                 "goals_conceded": total_conceded[n],
                 "games_played": total_gk_games[n],
+                "per_game": _per(total_conceded[n], total_gk_games[n]),
             }
             for n in total_conceded
         ],
@@ -276,7 +308,15 @@ def compute_aggregate_stats(peladas: list[Pelada]) -> dict:
     )
 
     fominha = sorted(
-        [{"name": n, "games": g} for n, g in total_participation.items()],
+        [
+            {
+                "name": n,
+                "games": g,
+                "sundays": total_sundays[n],
+                "per_sunday": _per(g, total_sundays[n]),
+            }
+            for n, g in total_participation.items()
+        ],
         key=lambda x: x["games"],
         reverse=True,
     )

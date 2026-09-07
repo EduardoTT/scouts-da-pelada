@@ -17,11 +17,17 @@ SITE_URL = "https://eduardott.github.io/scouts-da-pelada"
 PREVIEW_FILENAME = "preview.png"
 
 
+def format_media(value: float) -> str:
+    """Formata uma média com 2 casas e vírgula decimal (pt-BR)."""
+    return f"{value:.2f}".replace(".", ",")
+
+
 def build():
     peladas = load_all_peladas(DATA_DIR)
     peladas.sort(key=lambda p: p.date, reverse=True)
 
     env = jinja2.Environment(loader=jinja2.FileSystemLoader(TEMPLATE_DIR))
+    env.filters["media"] = format_media
 
     # Clean output
     if os.path.exists(OUTPUT_DIR):
