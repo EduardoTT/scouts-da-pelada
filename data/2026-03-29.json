@@ -16,7 +16,7 @@
       ],
       "red_team": [
         { "name": "Ronimar", "role": "goalkeeper" },
-        { "name": "Júnior", "role": "player" },
+        { "name": "Junior", "role": "player" },
         { "name": "Felipe", "role": "player" },
         { "name": "Giga", "role": "player" },
         { "name": "Dudu", "role": "player" },
@@ -42,7 +42,7 @@
       ],
       "red_team": [
         { "name": "Ronimar", "role": "goalkeeper" },
-        { "name": "Luiz", "role": "player" },
+        { "name": "Luis", "role": "player" },
         { "name": "Confiança", "role": "player" },
         { "name": "Pedro", "role": "player" },
         { "name": "Garcez", "role": "player" },
@@ -66,7 +66,7 @@
       ],
       "red_team": [
         { "name": "Ronimar", "role": "goalkeeper" },
-        { "name": "Luiz", "role": "player" },
+        { "name": "Luis", "role": "player" },
         { "name": "Confiança", "role": "player" },
         { "name": "Pedro", "role": "player" },
         { "name": "Garcez", "role": "player" },
@@ -74,7 +74,7 @@
       ],
       "goals": [
         { "player": "Dudu", "team": "blue", "count": 1 },
-        { "player": "Luiz", "team": "red", "count": 1 },
+        { "player": "Luis", "team": "red", "count": 1 },
         { "player": "Elmo", "team": "red", "count": 1 }
       ]
     },
@@ -85,7 +85,7 @@
       "blue_team": [
         { "name": "Wesley", "role": "goalkeeper" },
         { "name": "Chan", "role": "player" },
-        { "name": "Júnior", "role": "player" },
+        { "name": "Junior", "role": "player" },
         { "name": "Denis", "role": "player" },
         { "name": "Giga", "role": "player" },
         { "name": "Salvador", "role": "player" }
@@ -94,12 +94,12 @@
         { "name": "Ronimar", "role": "goalkeeper" },
         { "name": "Elmo", "role": "player" },
         { "name": "Pedro", "role": "player" },
-        { "name": "Luiz", "role": "player" },
+        { "name": "Luis", "role": "player" },
         { "name": "Garcez", "role": "player" },
         { "name": "Confiança", "role": "player" }
       ],
       "goals": [
-        { "player": "Júnior", "team": "blue", "count": 2 }
+        { "player": "Junior", "team": "blue", "count": 2 }
       ]
     },
     {
@@ -109,7 +109,7 @@
       "blue_team": [
         { "name": "Wesley", "role": "goalkeeper" },
         { "name": "Chan", "role": "player" },
-        { "name": "Júnior", "role": "player" },
+        { "name": "Junior", "role": "player" },
         { "name": "Denis", "role": "player" },
         { "name": "Giga", "role": "player" },
         { "name": "Salvador", "role": "player" }
@@ -123,7 +123,7 @@
         { "name": "Regufe", "role": "player" }
       ],
       "goals": [
-        { "player": "Júnior", "team": "blue", "count": 1 },
+        { "player": "Junior", "team": "blue", "count": 1 },
         { "player": "Denis", "team": "blue", "count": 1 },
         { "player": "Dudu", "team": "red", "count": 1 }
       ]
@@ -134,7 +134,7 @@
       "team_out": "blue",
       "blue_team": [
         { "name": "Wesley", "role": "goalkeeper" },
-        { "name": "Júnior", "role": "player" },
+        { "name": "Junior", "role": "player" },
         { "name": "Giga", "role": "player" },
         { "name": "Salvador", "role": "player" },
         { "name": "Denis", "role": "player" },
@@ -143,14 +143,14 @@
       "red_team": [
         { "name": "Ronimar", "role": "goalkeeper" },
         { "name": "Garcez", "role": "player" },
-        { "name": "Luiz", "role": "player" },
+        { "name": "Luis", "role": "player" },
         { "name": "Felipe", "role": "player" },
         { "name": "Confiança", "role": "player" },
         { "name": "André", "role": "player" }
       ],
       "goals": [
         { "player": "Garcez", "team": "red", "count": 1 },
-        { "player": "Luiz", "team": "red", "count": 1 }
+        { "player": "Luis", "team": "red", "count": 1 }
       ]
     },
     {
@@ -167,7 +167,7 @@
       ],
       "red_team": [
         { "name": "Ronimar", "role": "goalkeeper" },
-        { "name": "Luiz", "role": "player" },
+        { "name": "Luis", "role": "player" },
         { "name": "Garcez", "role": "player" },
         { "name": "Felipe", "role": "player" },
         { "name": "Confiança", "role": "player" },
