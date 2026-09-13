@@ -51,6 +51,7 @@ players = {
     "Botafogo": ["Botafogo"],
     "Fabiano": ["Fabiano"],
     "Anderson": ["Anderson"],
+    "André": ["André", "Andre"],
     "Batata": ["Batata"],
     "Cleber": ["Cleber"],
     "Braz": ["Braz"],
