@@ -26,7 +26,7 @@ players = {
     "Lima": ["Lima"],
     "Elmo": ["Elmo"],
     "Leandro Conv": ["Leandro Conv", "Leandro conv", "Leandro convidado"],
-    "Paulo": ["Paulo", "Seu Paulo"],
+    "Paulo": ["Paulo", "Seu Paulo", "Sr. Paulo", "Sr Paulo"],
     "Leonardo Conv": ["Leonardo Conv", "Leonardo conv", "Leonardo convidado"],
     "Wilton Conv": ["Wilton Conv", "Wilton conv", "Wilton convidado"],
     "Ruan": ["Ruan"],
@@ -68,4 +68,5 @@ players = {
     "Arthur": ["Arthur", "Artur"],
     "Bruno": ["Bruno"],
     "Ronan": ["Ronan"],
+    "Vozinha": ["Vozinha"],
 }

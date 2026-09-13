@@ -76,10 +76,14 @@ def test_artilheiros_estao_escalados_no_time_que_marcou():
                 "red": {p["name"] for p in game["red_team"]},
             }
             for goal in game.get("goals", []):
-                if goal["player"] not in times[goal["team"]]:
+                # Gol contra conta pro adversário: quem marcou está no outro time.
+                lado = goal["team"]
+                if goal.get("own_goal"):
+                    lado = "red" if lado == "blue" else "blue"
+                if goal["player"] not in times[lado]:
                     offenders.append(
                         f"  {os.path.basename(filepath)} jogo {game['game_number']}: "
-                        f"{goal['player']!r} marcou pelo {goal['team']} mas não está escalado"
+                        f"{goal['player']!r} marcou pelo {lado} mas não está escalado"
                     )
 
     assert not offenders, "gols de jogadores fora do time:\n" + "\n".join(offenders)
