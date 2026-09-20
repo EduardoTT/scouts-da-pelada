@@ -70,4 +70,5 @@ players = {
     "Bruno": ["Bruno"],
     "Ronan": ["Ronan"],
     "Vozinha": ["Vozinha"],
+    "Guga Conv": ["Guga Conv", "Guga conv", "Guga convidado", "Guga", "Gustavo Tiago Mendes"],
 }
