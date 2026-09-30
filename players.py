@@ -30,7 +30,7 @@ players = {
     "Leonardo Conv": ["Leonardo Conv", "Leonardo conv", "Leonardo convidado"],
     "Wilton Conv": ["Wilton Conv", "Wilton conv", "Wilton convidado"],
     "Ruan": ["Ruan"],
-    "Claudio": ["Claudio"],
+    "Claudio": ["Claudio", "Cláudio"],
     "Goleiro Gordo": ["Goleiro Gordo", "Gordo"],
     "Harison Conv": ["Harison Conv", "Harison conv", "Harison convidado"],
     "GB": ["GB"],
@@ -71,4 +71,5 @@ players = {
     "Ronan": ["Ronan"],
     "Vozinha": ["Vozinha"],
     "Guga Conv": ["Guga Conv", "Guga conv", "Guga convidado", "Guga", "Gustavo Tiago Mendes"],
+    "Landir": ["Landir"],
 }
