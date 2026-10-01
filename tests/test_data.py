@@ -1,4 +1,4 @@
-"""Validação dos arquivos reais em data/ contra o cadastro do players.py.
+"""Validação dos arquivos reais em data/ contra o cadastro do players.json.
 
 Erros de digitação em nome de jogador não quebram o build: eles viram um
 jogador novo e silenciosamente dividem as estatísticas em duas linhas.
@@ -52,13 +52,13 @@ def test_nomes_usam_as_chaves_canonicas_do_players():
                 motivo = (
                     f"apelido de {sugestao!r}"
                     if sugestao
-                    else "não existe no players.py"
+                    else "não existe no players.json"
                 )
                 offenders.setdefault(
                     (name, motivo), set()
                 ).add(os.path.basename(filepath))
 
-    assert not offenders, "nomes fora do cadastro do players.py:\n" + "\n".join(
+    assert not offenders, "nomes fora do cadastro do players.json:\n" + "\n".join(
         f"  {name!r} ({motivo}) em {sorted(arquivos)}"
         for (name, motivo), arquivos in sorted(offenders.items())
     )

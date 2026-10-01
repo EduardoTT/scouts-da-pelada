@@ -1,75 +1,30 @@
-players = {
-    "Junior": ["Junior", "Júnior", "JR"],
-    "Giga": ["Giga", "Gigante", "Gigantinho"],
-    "Wesley": ["Wesley"],
-    "Jorge": ["Jorge"],
-    "Pedro Cabeludo": ["Pedro", "Pedro Cabeludo", "Pedro anos 80"],
-    "Dudu": ["Dudu"],
-    "Marcelo": ["Marcelo"],
-    "Garcez": ["Garcez"],
-    "Ronimar": ["Ronimar", "Robimar"],
-    "Chan": ["Chan", "Cham"],
-    "Confiança": ["Confiança"],
-    "Regufe": ["Regufe"],
-    "Ricardo": ["Ricardo", "Ricardinho"],
-    "Hulk": ["Hulk", "Márcio"],
-    "Fabinho": ["Fabinho", "Fábio"],
-    "Salvador": ["Salvador"],
-    "Cadu": ["Cadu"],
-    "Felipão": ["Felipão"],
-    "Felipe": ["Felipe"],
-    "Eric": ["Eric", "Erick"],
-    "Maurício": ["Maurício"],
-    "Denis": ["Denis"],
-    "Luis": ["Luis", "Luiz"],
-    "Pedro": ["Pedro", "Pedrão", "Pedrao"],
-    "Lima": ["Lima"],
-    "Elmo": ["Elmo"],
-    "Leandro Conv": ["Leandro Conv", "Leandro conv", "Leandro convidado"],
-    "Paulo": ["Paulo", "Seu Paulo", "Sr. Paulo", "Sr Paulo"],
-    "Leonardo Conv": ["Leonardo Conv", "Leonardo conv", "Leonardo convidado"],
-    "Wilton Conv": ["Wilton Conv", "Wilton conv", "Wilton convidado"],
-    "Ruan": ["Ruan"],
-    "Claudio": ["Claudio", "Cláudio"],
-    "Goleiro Gordo": ["Goleiro Gordo", "Gordo"],
-    "Harison Conv": ["Harison Conv", "Harison conv", "Harison convidado"],
-    "GB": ["GB"],
-    "João": ["João", "João Goleiro", "João - Goleiro"],
-    "Micha": ["Micha"],
-    "Diogo Conv": ["Diogo Conv", "Diogo conv", "Diogo convidado", "Diogo C", "Diogo c"],
-    "Mateus Conv": ["Mateus Conv", "Mateus conv", "Mateus convidado", "Mateus C", "Mateus c", "Matheus"],
-    "Felipe Conv": ["Felipe Conv", "Felipe conv", "Felipe convidado", "Felipe C", "Felipe c"],
-    "Michel Conv": ["Michel Conv", "Michel conv", "Michel convidado", "Michel C", "Michel c"],
-    "Rafael Conv": ["Rafael Conv", "Rafael conv", "Rafael convidado", "Rafael C", "Rafael c"],
-    "Patrick Conv": ["Patrick Conv", "Patrick conv", "Patrick convidado", "Patrick C", "Patrick c"],
-    "Marcos Conv": ["Marcos Conv", "Marcos conv", "Marcos convidado", "Marcos C", "Marcos c", "Marcos"],
-    "Lucas": ["Lucas"],
-    "Leandro": ["Leandro"],
-    "Vicente": ["Vicente"],
-    "Léo Negão": ["Léo Negão", "Léo negão", "Leo negao", "Léo Negao", "Leo Negão", "Léo negao", "Léo", "Leo"],
-    "Júlio": ["Júlio", "Julio"],
-    "Botafogo": ["Botafogo"],
-    "Fabiano": ["Fabiano"],
-    "Anderson": ["Anderson"],
-    "André": ["André", "Andre"],
-    "Batata": ["Batata"],
-    "Cleber": ["Cleber"],
-    "Braz": ["Braz"],
-    "Wilson": ["Wilson"],
-    "Mateus óculos": ["Mateus óculos"],
-    "Mateus gêmeo": ["Mateus gêmeo"],
-    "Lucas gêmeo": ["Lucas gêmeo"],
-    "Douglas Conv": ["Douglas Conv", "Douglas conv", "Douglas convidado", "Douglas"],
-    "Rodrigo Conv": ["Rodrigo Conv", "Rodrigo conv", "Rodrigo convidado", "Rodrigo"],
-    "Breno Conv": ["Breno Conv", "Breno conv", "Breno convidado", "Breno"],
-    "Daniel Conv": ["Daniel Conv", "Daniel conv", "Daniel convidado", "Daniel"],
-    "Lucas Conv": ["Lucas Conv", "Lucas conv", "Lucas convidado"],
-    "Goleiro Barba": ["Goleiro Barba", "Goleiro barba", "Barba"],
-    "Renan": ["Renan", "Renam"],
-    "Arthur": ["Arthur", "Artur"],
-    "Bruno": ["Bruno"],
-    "Ronan": ["Ronan"],
-    "Vozinha": ["Vozinha"],
-    "Guga Conv": ["Guga Conv", "Guga conv", "Guga convidado", "Guga", "Gustavo Tiago Mendes"],
-    "Landir": ["Landir"],
-}
+"""Cadastro de jogadores.
+
+Os dados ficam em players.json: a chave é o nome principal do jogador (o que
+vai nos JSONs de data/) e o valor é a lista de apelidos que aparecem nas
+anotações. Este módulo só lê e grava o arquivo, para que nenhum cadastro de
+jogador precise editar código Python.
+"""
+
+import json
+import os
+
+PLAYERS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "players.json")
+
+
+def load_players(path: str = PLAYERS_FILE) -> dict[str, list[str]]:
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def save_players(data: dict[str, list[str]], path: str = PLAYERS_FILE) -> None:
+    """Grava um jogador por linha, para o diff de cada cadastro ficar legível."""
+    lines = [
+        f"  {json.dumps(name, ensure_ascii=False)}: {json.dumps(aliases, ensure_ascii=False)}"
+        for name, aliases in data.items()
+    ]
+    with open(path, "w", encoding="utf-8") as f:
+        f.write("{\n" + ",\n".join(lines) + "\n}\n")
+
+
+players = load_players()
