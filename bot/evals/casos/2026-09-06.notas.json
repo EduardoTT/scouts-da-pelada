@@ -1,0 +1,13 @@
+{
+  "mensagens": [
+    "Jogo 1 \n\nAzul  2 X  1 Vermelho  \n\nAzul\nWesley \nMateus \nGarcez \nErick 1\nGiga 1\nDenis  \n\n\nVermelho \n\nJoão\nSalvador 1\nJúnior\nChan\nPaulo \nDudu",
+    "Jogo 2\n\nAzul   1 X   1 Vermelho  \n\nAzul\nWesley \nMateus \nGarcez \nErick\nGiga\nDenis  1\n\n\nVermelho \n\nJoão\nJon Barba\nLéo \nRonan 1\nBreno \nRodrigo",
+    "Jogo 3\n\nAzul   0 X   0 Vermelho  \n\nAzul\nWesley \nSalvador \nPaulo\nChan\nDudu\nJúnior \n\nVermelho \n\nJoão\nJon Barba\nLéo \nRonan \nBreno \nRodrigo",
+    "Jogo 4\n\nAzul   2 X   0 Vermelho  \n\nAzul\nWesley \nSalvador \nPaulo 1\nChan\nDudu 1\nJúnior \n\nVermelho \n\nJoão\nErick\nGarcez \nDenis \nGiga \nMatheus",
+    "Jogo 5\n\nAzul   0 X   1 Vermelho  \n\nAzul\nWesley \nSalvador \nPaulo \nChan\nDudu \nJúnior \n\nVermelho \n\nBreno\nBarba\nRonan 1\nLéo\nRodrigo",
+    "Jogo 6\n\nAzul   1 X 0 Vermelho  \n\nAzul\nWesley \nDenis \nMatheus 1\nGarcez \nErick\nGiga\n\nVermelho \n\nBreno\nBarba\nRonan 1\nLéo\nRodrigo",
+    "Jogo 7\n\nAzul   3 X 0 Vermelho  \n\nAzul\nWesley \nDenis 1\nMatheus \nGarcez \nErick\nGiga 2\n\nVermelho \n\nSalvador \nDudu\nJúnior \nPaulo",
+    "Jogo 8\n\nAzul   3 X 0 Vermelho  \n\nAzul\nWesley \nDenis 2\nMatheus \nGarcez 1\nErick\nGiga \n\nVermelho \n\nSalvador \nDudu\nBarba \nBreno \nLéo"
+  ],
+  "extra": ""
+}

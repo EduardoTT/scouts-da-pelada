@@ -47,7 +47,7 @@ Depois da pelada vamos cadastrar os novos dados para poder atualizar o site.
   ]
 }
 ```
-A cada entrada de dados, se baseie no arquivo players.py e escolha o valor da chave do dicionário para o nome do jogador.
+A cada entrada de dados, se baseie no arquivo players.json e use a chave do dicionário (o nome principal) como nome do jogador. Os valores são os apelidos que aparecem nas anotações. O players.py só lê e grava esse arquivo; jogador novo ou apelido novo entra no players.json.
 
 ### Regras do formato
 - 6 jogadores por time: 1 goleiro (`role: "goalkeeper"`) e 5 de linha (`role: "player"`)
@@ -128,3 +128,14 @@ O default é mensal, e pode filtrar também por anual e total.
 ## Design
 - Cores inspiradas nas camisas: vermelho/branco quadriculado e azul/branco quadriculado
 - Cada jogador é identificado pelo nome (que na prática pode ser um apelido)
+
+## Bot de Telegram (pasta `bot/`)
+
+Organizadores cadastram peladas conversando com um bot de Telegram. O PRD completo está em `docs/prd-bot-telegram.md`.
+
+- O bot publica direto no `main`. Antes de cadastrar ou corrigir uma pelada por aqui, rode `git pull`, senão o push é recusado.
+- Mudanças nas regras da pelada ou no formato do JSON precisam ser refletidas em `bot/prompt.md` (instruções do agente) e em `bot/checks.py` (verificações do rascunho).
+- O bot tem ambiente próprio, separado do site. Para os testes do bot: `cd bot && uv run python -m pytest`. Os testes do site continuam sendo `uv run python -m pytest` na raiz.
+- `bot/evals/run.py` roda o agente com as anotações reais de setembro e compara com os JSONs publicados. Chama a API e custa cerca de US$ 1,50 a rodada completa, então rode só antes de mudar o prompt ou o modelo.
+- Para testar localmente: `cd bot && uv run python cli.py` (terminal) ou `uv run python main.py` (Telegram). A configuração local fica em `bot/.env`, fora do git, e aponta para o repo de teste `EduardoTT/scouts-da-pelada-teste`.
+- Em produção, o bot roda no Railway. O volume guarda o clone do repo, os organizadores aprovados (`organizadores.json`) e o registro de publicações (`publicacoes.json`), que o `/desfazer` usa.

@@ -4,3 +4,7 @@ __pycache__/
 *.pyc
 .DS_Store
 .gstack/
+bot/.env
+bot/.venv/
+bot/.volume/
+bot/evals/resultados/

@@ -1,0 +1,11 @@
+{
+  "mensagens": [
+    "Jogo 1 \n\nAzul 2 X 0 Vermelho\n\nAzul \n\nDenis - 1 \nRonan \nGarcez \nSalvador \nJúnior  - 1\n\nVermelho \n\nEric\nCláudio \nPedro \nGiga \nFelipão",
+    "Jogo 2 \n\nAzul 1 X 0 Vermelho\n\nAzul \n\nDenis \nRonan - 1\nGarcez \nSalvador \nJúnior  \n\nVermelho \n\nChan\nCláudio \nLandir \nGiga \nFelipão",
+    "Jogo 3\n\nAzul 0 X 1 Vermelho\n\nAzul \n\nDenis \nRonan \nGarcez \nSalvador \nJúnior  \n\nVermelho \n\nChan\nCláudio \nEric - 1\nGiga \nFelipão",
+    "Jogo 4\n\nAzul 1 X 1 Vermelho\n\nAzul \n\nDenis \nRonan \nGarcez - 1\nSalvador \nLandir\n\nVermelho \n\nChan\nCláudio \nEric - 1\nGiga \nFelipão",
+    "Jogo 5\n\nAzul 1 X 0 Vermelho\n\nAzul \n\nDenis \nRonan \nGarcez \nSalvador - 1\nLandir\n\nVermelho \n\nChan\nCláudio \nJúnior \nGiga \nFelipão",
+    "Jogo 6\n\nAzul 3 X 1 Vermelho\n\nAzul \n\nDenis - 3\nRonan \nGarcez \nSalvador \nLandir\n\nVermelho \n\nEric\nCláudio \nJúnior - 1\nGiga \nFelipão"
+  ],
+  "extra": ""
+}

@@ -1,0 +1,20 @@
+[project]
+name = "pelada-bot"
+version = "0.1.0"
+description = "Bot de Telegram para organizadores cadastrarem peladas"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    # Usadas pelo bot
+    "claude-agent-sdk",
+    "python-telegram-bot",
+    # Usadas pelo site (build.py e tests/), que o bot roda antes de publicar
+    "jinja2",
+    "pillow",
+    "pytest",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
