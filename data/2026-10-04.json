@@ -1,0 +1,178 @@
+{
+  "date": "2026-10-04",
+  "referee": "Robson",
+  "games": [
+    {
+      "game_number": 1,
+      "score": { "blue": 2, "red": 0 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Fabiano", "role": "player" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Ricardo", "role": "player" },
+        { "name": "GB", "role": "player" },
+        { "name": "Giga", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Vitinha Conv", "role": "goalkeeper" },
+        { "name": "Eric", "role": "player" },
+        { "name": "Landir", "role": "player" },
+        { "name": "Lima", "role": "player" },
+        { "name": "Denis", "role": "player" },
+        { "name": "Dudu", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Ricardo", "team": "blue", "count": 1 },
+        { "player": "GB", "team": "blue", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 2,
+      "score": { "blue": 0, "red": 0 },
+      "team_out": "blue",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Fabiano", "role": "player" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Ricardo", "role": "player" },
+        { "name": "GB", "role": "player" },
+        { "name": "Giga", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Vitinha Conv", "role": "goalkeeper" },
+        { "name": "Felipão", "role": "player" },
+        { "name": "Guga Conv", "role": "player" },
+        { "name": "Eric", "role": "player" },
+        { "name": "Valdir Bigode Conv", "role": "player" },
+        { "name": "Lima", "role": "player" }
+      ],
+      "goals": []
+    },
+    {
+      "game_number": 3,
+      "score": { "blue": 1, "red": 1 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Landir", "role": "player" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Dudu", "role": "player" },
+        { "name": "Denis", "role": "player" },
+        { "name": "Giga", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Vitinha Conv", "role": "goalkeeper" },
+        { "name": "Felipão", "role": "player" },
+        { "name": "Guga Conv", "role": "player" },
+        { "name": "Eric", "role": "player" },
+        { "name": "Valdir Bigode Conv", "role": "player" },
+        { "name": "Lima", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Giga", "team": "blue", "count": 1 },
+        { "player": "Guga Conv", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 4,
+      "score": { "blue": 1, "red": 1 },
+      "team_out": "blue",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Landir", "role": "player" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Dudu", "role": "player" },
+        { "name": "Denis", "role": "player" },
+        { "name": "Giga", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Vitinha Conv", "role": "goalkeeper" },
+        { "name": "Ricardo", "role": "player" },
+        { "name": "Guga Conv", "role": "player" },
+        { "name": "Fabiano", "role": "player" },
+        { "name": "Valdir Bigode Conv", "role": "player" },
+        { "name": "GB", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Salvador", "team": "blue", "count": 1 },
+        { "player": "Ricardo", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 5,
+      "score": { "blue": 0, "red": 2 },
+      "team_out": "blue",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Garcez", "role": "player" },
+        { "name": "Lima", "role": "player" },
+        { "name": "Eric", "role": "player" },
+        { "name": "Felipão", "role": "player" },
+        { "name": "Denis", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Vitinha Conv", "role": "goalkeeper" },
+        { "name": "Ricardo", "role": "player" },
+        { "name": "Guga Conv", "role": "player" },
+        { "name": "Fabiano", "role": "player" },
+        { "name": "Giga", "role": "player" },
+        { "name": "GB", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Guga Conv", "team": "red", "count": 1 },
+        { "player": "Fabiano", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 6,
+      "score": { "blue": 2, "red": 1 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Garcez", "role": "player" },
+        { "name": "Landir", "role": "player" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Felipão", "role": "player" },
+        { "name": "Dudu", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Vitinha Conv", "role": "goalkeeper" },
+        { "name": "Ricardo", "role": "player" },
+        { "name": "Guga Conv", "role": "player" },
+        { "name": "Fabiano", "role": "player" },
+        { "name": "Giga", "role": "player" },
+        { "name": "GB", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Dudu", "team": "blue", "count": 2 },
+        { "player": "Giga", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 7,
+      "score": { "blue": 2, "red": 1 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Garcez", "role": "player" },
+        { "name": "Dudu", "role": "player" },
+        { "name": "Landir", "role": "player" },
+        { "name": "Felipão", "role": "player" },
+        { "name": "Salvador", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Vitinha Conv", "role": "goalkeeper" },
+        { "name": "Valdir Bigode Conv", "role": "player" },
+        { "name": "Eric", "role": "player" },
+        { "name": "Giga", "role": "player" },
+        { "name": "Denis", "role": "player" },
+        { "name": "GB", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Dudu", "team": "blue", "count": 2 },
+        { "player": "Denis", "team": "red", "count": 1 }
+      ]
+    }
+  ]
+}
