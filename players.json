@@ -16,7 +16,7 @@
   "Fabinho": ["Fabinho", "Fábio"],
   "Salvador": ["Salvador"],
   "Cadu": ["Cadu"],
-  "Felipão": ["Felipão"],
+  "Felipão": ["Felipão", "Felipao"],
   "Felipe": ["Felipe"],
   "Eric": ["Eric", "Erick"],
   "Maurício": ["Maurício"],
@@ -70,6 +70,8 @@
   "Bruno": ["Bruno"],
   "Ronan": ["Ronan"],
   "Vozinha": ["Vozinha"],
-  "Guga Conv": ["Guga Conv", "Guga conv", "Guga convidado", "Guga", "Gustavo Tiago Mendes"],
-  "Landir": ["Landir"]
+  "Guga Conv": ["Guga Conv", "Guga conv", "Guga convidado", "Guga", "Gustavo Tiago Mendes", "Thiago mendes"],
+  "Landir": ["Landir", "Landy"],
+  "Valdir Bigode Conv": ["Valdir Bigode Conv", "Valdir Bigode conv", "Valdir Bigode convidado", "Valdir bigode", "Valdir Bigode", "Bigode"],
+  "Vitinha Conv": ["Vitinha Conv", "Vitinha conv", "Vitinha convidado", "Vitinha", "Vitor"]
 }
