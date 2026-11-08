@@ -1,0 +1,207 @@
+{
+  "date": "2026-11-08",
+  "referee": "Robson",
+  "games": [
+    {
+      "game_number": 1,
+      "score": { "blue": 3, "red": 0 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Denis", "role": "player" },
+        { "name": "Chan", "role": "player" },
+        { "name": "Garcez", "role": "player" },
+        { "name": "Everton", "role": "player" },
+        { "name": "Dudu", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Vozinha", "role": "goalkeeper" },
+        { "name": "Fabinho", "role": "player" },
+        { "name": "Ricardo", "role": "player" },
+        { "name": "Junior", "role": "player" },
+        { "name": "Apolo Conv", "role": "player" },
+        { "name": "Giga", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Chan", "team": "blue", "count": 2 },
+        { "player": "Everton", "team": "blue", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 2,
+      "score": { "blue": 3, "red": 1 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Denis", "role": "player" },
+        { "name": "Chan", "role": "player" },
+        { "name": "Garcez", "role": "player" },
+        { "name": "Everton", "role": "player" },
+        { "name": "Dudu", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Vozinha", "role": "goalkeeper" },
+        { "name": "Fabiano", "role": "player" },
+        { "name": "Felipão", "role": "player" },
+        { "name": "Leandro", "role": "player" },
+        { "name": "Regufe", "role": "player" },
+        { "name": "Giga", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Garcez", "team": "blue", "count": 2 },
+        { "player": "Everton", "team": "blue", "count": 1 },
+        { "player": "Leandro", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 3,
+      "score": { "blue": 1, "red": 0 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Denis", "role": "player" },
+        { "name": "Chan", "role": "player" },
+        { "name": "Garcez", "role": "player" },
+        { "name": "Everton", "role": "player" },
+        { "name": "Dudu", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Vozinha", "role": "goalkeeper" },
+        { "name": "Ricardo", "role": "player" },
+        { "name": "Apolo Conv", "role": "player" },
+        { "name": "Junior", "role": "player" },
+        { "name": "Fabiano", "role": "player" },
+        { "name": "Felipão", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Garcez", "team": "blue", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 4,
+      "score": { "blue": 3, "red": 0 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Denis", "role": "player" },
+        { "name": "Chan", "role": "player" },
+        { "name": "Garcez", "role": "player" },
+        { "name": "Everton", "role": "player" },
+        { "name": "Dudu", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Vozinha", "role": "goalkeeper" },
+        { "name": "Leandro", "role": "player" },
+        { "name": "Fabiano", "role": "player" },
+        { "name": "Regufe", "role": "player" },
+        { "name": "Fabinho", "role": "player" },
+        { "name": "Giga", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Denis", "team": "blue", "count": 1 },
+        { "player": "Garcez", "team": "blue", "count": 1 },
+        { "player": "Dudu", "team": "blue", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 5,
+      "score": { "blue": 0, "red": 1 },
+      "team_out": "blue",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Denis", "role": "player" },
+        { "name": "Chan", "role": "player" },
+        { "name": "Garcez", "role": "player" },
+        { "name": "Everton", "role": "player" },
+        { "name": "Dudu", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Vozinha", "role": "goalkeeper" },
+        { "name": "Felipão", "role": "player" },
+        { "name": "Fabiano", "role": "player" },
+        { "name": "Ricardo", "role": "player" },
+        { "name": "Apolo Conv", "role": "player" },
+        { "name": "Junior", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Ricardo", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 6,
+      "score": { "blue": 1, "red": 1 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Regufe", "role": "player" },
+        { "name": "Leandro", "role": "player" },
+        { "name": "Fabinho", "role": "player" },
+        { "name": "Giga", "role": "player" },
+        { "name": "Dudu", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Vozinha", "role": "goalkeeper" },
+        { "name": "Felipão", "role": "player" },
+        { "name": "Fabiano", "role": "player" },
+        { "name": "Ricardo", "role": "player" },
+        { "name": "Apolo Conv", "role": "player" },
+        { "name": "Junior", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Leandro", "team": "blue", "count": 1 },
+        { "player": "Junior", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 7,
+      "score": { "blue": 0, "red": 3 },
+      "team_out": "blue",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Regufe", "role": "player" },
+        { "name": "Leandro", "role": "player" },
+        { "name": "Fabinho", "role": "player" },
+        { "name": "Giga", "role": "player" },
+        { "name": "Dudu", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Vozinha", "role": "goalkeeper" },
+        { "name": "Braz", "role": "player" },
+        { "name": "Denis", "role": "player" },
+        { "name": "Everton", "role": "player" },
+        { "name": "Chan", "role": "player" },
+        { "name": "Garcez", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Denis", "team": "red", "count": 2 },
+        { "player": "Garcez", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 8,
+      "score": { "blue": 1, "red": 2 },
+      "team_out": "blue",
+      "blue_team": [
+        { "name": "Wesley", "role": "goalkeeper" },
+        { "name": "Regufe", "role": "player" },
+        { "name": "Junior", "role": "player" },
+        { "name": "Leandro", "role": "player" },
+        { "name": "Giga", "role": "player" },
+        { "name": "Fabinho", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Vozinha", "role": "goalkeeper" },
+        { "name": "Garcez", "role": "player" },
+        { "name": "Denis", "role": "player" },
+        { "name": "Braz", "role": "player" },
+        { "name": "Chan", "role": "player" },
+        { "name": "Everton", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Fabinho", "team": "blue", "count": 1 },
+        { "player": "Garcez", "team": "red", "count": 1 },
+        { "player": "Denis", "team": "red", "count": 1 }
+      ]
+    }
+  ]
+}
