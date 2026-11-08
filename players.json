@@ -10,7 +10,7 @@
   "Ronimar": ["Ronimar", "Robimar"],
   "Chan": ["Chan", "Cham"],
   "Confiança": ["Confiança"],
-  "Regufe": ["Regufe"],
+  "Regufe": ["Regufe", "Refute"],
   "Ricardo": ["Ricardo", "Ricardinho"],
   "Hulk": ["Hulk", "Márcio"],
   "Fabinho": ["Fabinho", "Fábio"],
@@ -54,7 +54,7 @@
   "André": ["André", "Andre"],
   "Batata": ["Batata"],
   "Cleber": ["Cleber"],
-  "Braz": ["Braz"],
+  "Braz": ["Braz", "Brás"],
   "Wilson": ["Wilson"],
   "Mateus óculos": ["Mateus óculos"],
   "Mateus gêmeo": ["Mateus gêmeo"],
@@ -77,5 +77,6 @@
   "Felipe Massauer Conv": ["Felipe Massauer Conv", "Felipe Massauer conv", "Felipe Massauer convidado", "Felipe massauer", "Felipe Massauer"],
   "Everton": ["Everton"],
   "Lucas Mustafa Conv": ["Lucas Mustafa Conv", "Lucas Mustafa conv", "Lucas Mustafa convidado"],
-  "Yago Conv": ["Yago Conv", "Yago conv", "Yago convidado", "Yago"]
+  "Yago Conv": ["Yago Conv", "Yago conv", "Yago convidado", "Yago"],
+  "Apolo Conv": ["Apolo Conv", "Apolo conv", "Apolo convidado", "Apolo"]
 }
