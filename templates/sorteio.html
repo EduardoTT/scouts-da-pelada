@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %}Sorteio de times — Pelada de Domingo{% endblock %}
+
+{% block content %}
+<section class="sorteio-page">
+    <h2>Sorteio de times</h2>
+    <p class="sorteio-ajuda">Toque para escolher posição e nível, e toque de novo para desmarcar. Sem escolha, conta como meio e nível ++.</p>
+
+    <form id="sorteio-form" class="ranking" autocomplete="off">
+        <div class="chips-bloco">
+            <h4 class="role-subtitle">Goleiros</h4>
+            <div class="chips">
+                {% for nome in chips_goleiros %}<button type="button" class="chip" data-alvo="gk-nome">{{ nome }}</button>{% endfor %}
+            </div>
+            <h4 class="role-subtitle">Mensalistas</h4>
+            <div class="chips">
+                {% for nome, posicao in chips_linha.items() %}<button type="button" class="chip" data-alvo="linha-nome" data-posicao="{{ posicao or '' }}">{{ nome }}</button>{% endfor %}
+            </div>
+        </div>
+
+        <h4 class="role-subtitle">Goleiros</h4>
+        <div class="sorteio-goleiros">
+            <input type="text" class="gk-nome" list="nomes-goleiros" placeholder="Goleiro 1" aria-label="Goleiro 1">
+            <input type="text" class="gk-nome" list="nomes-goleiros" placeholder="Goleiro 2" aria-label="Goleiro 2">
+        </div>
+
+        <h4 class="role-subtitle">Jogadores de linha</h4>
+        {% for i in range(1, 11) %}
+        <div class="linha-row">
+            <input type="text" class="linha-nome" list="nomes-linha" placeholder="Jogador {{ i }}" aria-label="Jogador {{ i }}">
+            <div class="seg linha-posicao" role="group" aria-label="Posição do jogador {{ i }}" data-valor="">
+                <button type="button" data-valor="zaga">Zaga</button>
+                <button type="button" data-valor="meio">Meio</button>
+                <button type="button" data-valor="ataque">Ataque</button>
+            </div>
+            <div class="seg linha-nivel" role="group" aria-label="Nível do jogador {{ i }}" data-valor="">
+                <button type="button" data-valor="1">+</button>
+                <button type="button" data-valor="2">++</button>
+                <button type="button" data-valor="3">+++</button>
+            </div>
+        </div>
+        {% endfor %}
+
+        <p id="sorteio-erro" class="sorteio-erro" hidden></p>
+        <button type="submit" class="filter-btn active sorteio-btn">Sortear</button>
+    </form>
+
+    <div id="sorteio-resultado" hidden></div>
+
+    <datalist id="nomes-goleiros">
+        {% for nome in nomes_goleiros %}<option value="{{ nome }}">{% endfor %}
+    </datalist>
+    <datalist id="nomes-linha">
+        {% for nome in nomes_linha %}<option value="{{ nome }}">{% endfor %}
+    </datalist>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ base_url }}/static/sorteio.js"></script>
+{% endblock %}

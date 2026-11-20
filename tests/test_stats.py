@@ -691,3 +691,23 @@ def test_per_sem_divisor_nao_estoura():
     agg = compute_aggregate_stats([])
     assert agg["fominha"]["players"] == []
     assert agg["goleador"]["players"] == []
+
+
+def test_autocomplete_ordena_por_frequencia_na_funcao():
+    from stats import autocomplete_names
+
+    games = [
+        _make_game(1, 1, 0, "red", ["Ana", "Bia"], ["Caio"], blue_gk="Gil", red_gk="Hugo"),
+        _make_game(2, 1, 0, "red", ["Ana", "Bia"], ["Duda"], blue_gk="Gil", red_gk="Ivo"),
+        _make_game(3, 1, 0, "red", ["Ana"], ["Caio"], blue_gk="Gil", red_gk="Hugo"),
+    ]
+    pelada = Pelada(date="2026-11-01", referee="Juiz", games=games)
+    cadastro = ["Ana", "Bia", "Caio", "Duda", "Gil", "Hugo", "Ivo", "Zeca"]
+
+    linha = autocomplete_names([pelada], cadastro, "player")
+    assert linha[:4] == ["Ana", "Bia", "Caio", "Duda"]
+    assert linha[4:] == ["Gil", "Hugo", "Ivo", "Zeca"]
+
+    goleiros = autocomplete_names([pelada], cadastro, "goalkeeper")
+    assert goleiros[:3] == ["Gil", "Hugo", "Ivo"]
+    assert goleiros[3:] == ["Ana", "Bia", "Caio", "Duda", "Zeca"]

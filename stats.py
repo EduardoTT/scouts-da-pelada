@@ -337,3 +337,20 @@ def compute_aggregate_stats(peladas: list[Pelada]) -> dict:
         "fominha": _split_by_role(fominha, role_map),
         "apitador": apitador,
     }
+
+
+def autocomplete_names(peladas: list[Pelada], all_names: list[str], role: str) -> list[str]:
+    """Nomes para o autocomplete do sorteio, quem mais jogou na função primeiro.
+
+    Quem nunca jogou na função vem depois, em ordem alfabética, porque o
+    sorteio aceita qualquer jogador cadastrado em qualquer função.
+    """
+    counts: dict[str, int] = defaultdict(int)
+    for pelada in peladas:
+        for game in pelada.games:
+            for p in game.blue_team + game.red_team:
+                if p.role == role:
+                    counts[p.name] += 1
+    frequent = sorted(counts, key=lambda n: (-counts[n], n))
+    rest = sorted(n for n in all_names if n not in counts)
+    return frequent + rest

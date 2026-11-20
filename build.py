@@ -1,3 +1,4 @@
+import json
 import os
 import shutil
 
@@ -5,7 +6,8 @@ import jinja2
 
 from models import load_all_peladas
 from preview import generate_preview
-from stats import compute_pelada_stats, compute_aggregate_stats, filter_peladas
+from players import players
+from stats import autocomplete_names, compute_pelada_stats, compute_aggregate_stats, filter_peladas
 
 DATA_DIR = "data"
 OUTPUT_DIR = "output"
@@ -15,6 +17,9 @@ ROOT_BASE_URL = "."      # for pages at root level (index.html, stats.html)
 PELADA_BASE_URL = ".."   # for pages inside pelada/ subdirectory
 SITE_URL = "https://eduardott.github.io/scouts-da-pelada"
 PREVIEW_FILENAME = "preview.png"
+# Nome do mensalista -> posição de costume ("goleiro", "zaga", "meio", "ataque" ou null).
+MENSALISTAS_FILE = "mensalistas.json"
+GOLEIROS_NOS_CHIPS = 6
 
 
 def format_media(value: float) -> str:
@@ -97,6 +102,27 @@ def build():
         base_url=ROOT_BASE_URL,
     )
     with open(os.path.join(OUTPUT_DIR, "stats.html"), "w", encoding="utf-8") as f:
+        f.write(html)
+
+    # Render sorteio page
+    nomes_goleiros = autocomplete_names(peladas, list(players), "goalkeeper")
+    with open(MENSALISTAS_FILE, encoding="utf-8") as f:
+        mensalistas = json.load(f)
+    # Goleiros mensalistas vêm primeiro; o resto dos chips são os goleiros mais frequentes.
+    goleiros_mensalistas = [n for n, pos in mensalistas.items() if pos == "goleiro"]
+    frequentes = [n for n in nomes_goleiros if n not in goleiros_mensalistas]
+    chips_goleiros = (goleiros_mensalistas + frequentes)[:max(GOLEIROS_NOS_CHIPS, len(goleiros_mensalistas))]
+    chips_linha = {n: pos for n, pos in mensalistas.items() if pos != "goleiro"}
+    template = env.get_template("sorteio.html")
+    html = template.render(
+        nomes_goleiros=nomes_goleiros,
+        chips_goleiros=chips_goleiros,
+        chips_linha=chips_linha,
+        nomes_linha=autocomplete_names(peladas, list(players), "player"),
+        active_tab="sorteio",
+        base_url=ROOT_BASE_URL,
+    )
+    with open(os.path.join(OUTPUT_DIR, "sorteio.html"), "w", encoding="utf-8") as f:
         f.write(html)
 
     print(f"Site gerado em {OUTPUT_DIR}/ com {len(peladas)} pelada(s).")
