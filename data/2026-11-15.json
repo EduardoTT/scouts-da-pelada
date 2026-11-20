@@ -1,0 +1,187 @@
+{
+  "date": "2026-11-15",
+  "referee": "Robson",
+  "games": [
+    {
+      "game_number": 1,
+      "score": { "blue": 2, "red": 0 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Ronimar", "role": "goalkeeper" },
+        { "name": "Garcez", "role": "player" },
+        { "name": "Fabinho", "role": "player" },
+        { "name": "Ricardo", "role": "player" },
+        { "name": "Chan", "role": "player" },
+        { "name": "Denis", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Vozinha", "role": "goalkeeper" },
+        { "name": "Dudu", "role": "player" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Marcelo", "role": "player" },
+        { "name": "Junior", "role": "player" },
+        { "name": "Felipão", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Ricardo", "team": "blue", "count": 1 },
+        { "player": "Chan", "team": "blue", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 2,
+      "score": { "blue": 1, "red": 3 },
+      "team_out": "blue",
+      "blue_team": [
+        { "name": "Ronimar", "role": "goalkeeper" },
+        { "name": "Garcez", "role": "player" },
+        { "name": "Fabinho", "role": "player" },
+        { "name": "Ricardo", "role": "player" },
+        { "name": "Chan", "role": "player" },
+        { "name": "Denis", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Vozinha", "role": "goalkeeper" },
+        { "name": "Dudu", "role": "player" },
+        { "name": "Leandro", "role": "player" },
+        { "name": "Lucas Salim Conv", "role": "player" },
+        { "name": "Arthur", "role": "player" },
+        { "name": "Felipão", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Fabinho", "team": "blue", "count": 1 },
+        { "player": "Lucas Salim Conv", "team": "red", "count": 1 },
+        { "player": "Arthur", "team": "red", "count": 1 },
+        { "player": "Leandro", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 3,
+      "score": { "blue": 2, "red": 3 },
+      "team_out": "blue",
+      "blue_team": [
+        { "name": "Ronimar", "role": "goalkeeper" },
+        { "name": "Jorge", "role": "player" },
+        { "name": "Fabinho", "role": "player" },
+        { "name": "Salvador", "role": "player" },
+        { "name": "Junior", "role": "player" },
+        { "name": "Marcelo", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Vozinha", "role": "goalkeeper" },
+        { "name": "Dudu", "role": "player" },
+        { "name": "Garcez", "role": "player" },
+        { "name": "Lucas Salim Conv", "role": "player" },
+        { "name": "Arthur", "role": "player" },
+        { "name": "Felipão", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Salvador", "team": "blue", "count": 1 },
+        { "player": "Junior", "team": "blue", "count": 1 },
+        { "player": "Dudu", "team": "red", "count": 1 },
+        { "player": "Garcez", "team": "red", "count": 1 },
+        { "player": "Lucas Salim Conv", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 4,
+      "score": { "blue": 1, "red": 0 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Ronimar", "role": "goalkeeper" },
+        { "name": "Jorge", "role": "player" },
+        { "name": "Ricardo", "role": "player" },
+        { "name": "Denis", "role": "player" },
+        { "name": "Chan", "role": "player" },
+        { "name": "Salvador", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Vozinha", "role": "goalkeeper" },
+        { "name": "Dudu", "role": "player" },
+        { "name": "Garcez", "role": "player" },
+        { "name": "Lucas Salim Conv", "role": "player" },
+        { "name": "Arthur", "role": "player" },
+        { "name": "Felipão", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Ricardo", "team": "blue", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 5,
+      "score": { "blue": 1, "red": 0 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Ronimar", "role": "goalkeeper" },
+        { "name": "Jorge", "role": "player" },
+        { "name": "Ricardo", "role": "player" },
+        { "name": "Denis", "role": "player" },
+        { "name": "Chan", "role": "player" },
+        { "name": "Salvador", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Vozinha", "role": "goalkeeper" },
+        { "name": "Fabinho", "role": "player" },
+        { "name": "Junior", "role": "player" },
+        { "name": "Garcez", "role": "player" },
+        { "name": "Arthur", "role": "player" },
+        { "name": "Lucas Salim Conv", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Denis", "team": "blue", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 6,
+      "score": { "blue": 2, "red": 1 },
+      "team_out": "red",
+      "blue_team": [
+        { "name": "Ronimar", "role": "goalkeeper" },
+        { "name": "Jorge", "role": "player" },
+        { "name": "Ricardo", "role": "player" },
+        { "name": "Denis", "role": "player" },
+        { "name": "Chan", "role": "player" },
+        { "name": "Salvador", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Vozinha", "role": "goalkeeper" },
+        { "name": "Junior", "role": "player" },
+        { "name": "Garcez", "role": "player" },
+        { "name": "Dudu", "role": "player" },
+        { "name": "Fabinho", "role": "player" },
+        { "name": "Lucas Salim Conv", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Denis", "team": "blue", "count": 1 },
+        { "player": "Salvador", "team": "blue", "count": 1 },
+        { "player": "Garcez", "team": "red", "count": 1 }
+      ]
+    },
+    {
+      "game_number": 7,
+      "score": { "blue": 1, "red": 3 },
+      "team_out": "blue",
+      "blue_team": [
+        { "name": "Ronimar", "role": "goalkeeper" },
+        { "name": "Jorge", "role": "player" },
+        { "name": "Ricardo", "role": "player" },
+        { "name": "Denis", "role": "player" },
+        { "name": "Chan", "role": "player" },
+        { "name": "Salvador", "role": "player" }
+      ],
+      "red_team": [
+        { "name": "Vozinha", "role": "goalkeeper" },
+        { "name": "Arthur", "role": "player" },
+        { "name": "Garcez", "role": "player" },
+        { "name": "Dudu", "role": "player" },
+        { "name": "Fabinho", "role": "player" },
+        { "name": "Lucas Salim Conv", "role": "player" }
+      ],
+      "goals": [
+        { "player": "Ricardo", "team": "blue", "count": 1 },
+        { "player": "Arthur", "team": "red", "count": 1 },
+        { "player": "Garcez", "team": "red", "count": 1 },
+        { "player": "Lucas Salim Conv", "team": "red", "count": 1 }
+      ]
+    }
+  ]
+}
